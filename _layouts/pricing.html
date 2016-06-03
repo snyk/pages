@@ -1,14 +1,104 @@
----
-layout: default
----
-<article class="post">
+{% include head.html %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+{% include header.html %}
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+<div class="layout-container">
 
-</article>
+{{content}}
+
+
+<h1>Pricing</h1>
+
+<p>Snyk repos are free for open source projects and limited individual use.</p>
+
+<p>Subscribe to a paid plan to collaborate on large numbers of private repositories.</p>
+
+
+<table class="table-responsive" style="table-layout: fixed;">
+  <thead>
+    <tr><th></th>
+    <th>Starter</th>
+    <th>Team</th>
+    <th>Pro</th>
+    <th>Enterprise</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td>$19/month</td>
+      <td>$99/month</td>
+      <td>$449/month</td>
+      <td>Contact us</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><button class="button--tertiary" style="margin: 0 0 5px 0;" id="buttonPlan1">Start 14 day free trial</button></td>
+      <td><button class="button--tertiary" style="margin: 0 0 5px 0;" id="buttonPlan2">Start 14 day free trial</button></td>
+      <td><button class="button--tertiary" style="margin: 0 0 5px 0;" id="buttonPlan3">Start 14 day free trial</button></td>
+      <td><button class="button--tertiary" style="margin: 0 0 5px 0;">Contact us</button></td>
+    </tr><tr>
+      <th>Private Projects</th>
+      <td>Up to 5</td>
+      <td>Up to 25</td>
+      <td>Up to 150</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <th>Users</th>
+      <td>Unlimited</td>
+      <td>Unlimited</td>
+      <td>Unlimited</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <th>Open source projects</th>
+      <td>Unlimited</td>
+      <td>Unlimited</td>
+      <td>Unlimited</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <th>Features</th>
+      <td>Ci integration</td>
+      <td>Ci integration, User roles</td>
+      <td>Ci integration, User roles</td>
+      <td>Ci integration, User roles</td>
+    </tr>
+    <tr>
+      <th>Support</th>
+      <td>Standard</td>
+      <td>Standard</td>
+      <td>Priority</td>
+      <td>Custom</td>
+    </tr>
+  </tbody>
+
+
+</table>
+
+
+<p>Free plan: limited to 5 private projects (unlimited for open source projects)</p>
+
+<button class="site-cta__form__button button--secondary" type="submit">Get free account</button>
+
+<div class="layout-container layout-container--centered layout-container--skinny">
+  <h2 class="h3 u--push-top">Great teams are using Snyk</h2>
+  <ul class="logos">
+    [logos]
+  </ul>
+</div>
+
+<h2>FAQs</h2>
+
+{% for faq in site.faqs %}
+  <details>
+    <summary>{{ faq.question }}</summary>
+    {{faq.content}}
+  </details>
+{% endfor %}
+
+</div>
+
+{% include footer.html %}
+
+{% include foot.html %}
