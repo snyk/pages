@@ -2,22 +2,151 @@
 layout: homepage
 ---
 
-<div class="home">
+<main class="layout-stacked">
+<link rel="stylesheet" href="/style/build/main.min.css?c4469be4aa9a568fae7e98722e2e95de"><script> </script><!-- Why this is here: https://jakearchibald.com/2016/link-in-body/ -->
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+    <section id="value-prop" class="backdrop-neutral">
+
+  <div class="layout-container layout-container--centered">
+
+    <h1 class="h2 u--push-bottom-l">Find &amp; fix known vulnerabilities in Node.js dependencies</h1>
+
+    <ul class="layout-cols layout-cols--3">
+      <li class="layout-cols__item teaser bg--shield-test">
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="112" viewBox="0 0 155 193"><title>Test</title><g fill="none"><path d="M77.63 188L4.96 135.82 4.96 14.15C4.96 14.15 31.83 4 77.73 4 123.63 4 150.31 14.15 150.31 14.15L150.31 135.82 77.63 188Z" style="fill:#666487;stroke-width:8;stroke:#FFF"></path><path d="M78 8C78.26 8 78 182.84 78 182.84L146.2 133.13 146.2 16.87C146.2 16.87 122.5 8 78.3 8L78 8Z" fill="#48466D"></path><g style="stroke-width:8.6;stroke:#F5F5F5"><path d="M130.99 86.4C130.99 86.36 130.99 86.33 130.98 86.29 130.98 86.27 130.98 86.25 130.98 86.23 130.97 86.21 130.97 86.18 130.97 86.15 130.96 86.12 130.96 86.09 130.95 86.06 130.95 86.06 130.95 86.05 130.95 86.05 130.82 85.35 130.43 84.69 129.84 84.19 126.46 80.77 122.44 77.72 118.35 74.94 109.54 68.95 99.46 63.94 88.34 61.92 81.91 60.76 75.44 60.71 68.98 61.7 63.11 62.59 57.44 64.46 52.14 66.77 43.84 70.39 36.26 75.38 29.66 80.97 28.44 82.01 27.22 83.06 26.11 84.19 24.63 85.68 24.63 87.46 26.11 88.95 29.49 92.37 33.51 95.42 37.6 98.2 46.41 104.19 56.49 109.2 67.61 111.22 74.04 112.38 80.51 112.43 86.97 111.44 92.85 110.55 98.51 108.68 103.81 106.37 112.11 102.75 119.69 97.76 126.29 92.17 127.52 91.13 128.73 90.08 129.84 88.95 130.43 88.45 130.82 87.79 130.95 87.09 130.95 87.09 130.95 87.08 130.95 87.08 130.96 87.05 130.96 87.02 130.97 86.99 130.97 86.96 130.98 86.93 130.98 86.91 130.98 86.89 130.98 86.87 130.99 86.85 130.99 86.81 130.99 86.78 130.99 86.74 131 86.68 131 86.63 131 86.57 131 86.51 131 86.46 130.99 86.4L130.99 86.4ZM78 107.81C66.74 107.81 57.6 98.53 57.6 87.1 57.6 75.66 66.74 66.38 78 66.38 89.26 66.38 98.39 75.66 98.39 87.1 98.39 98.53 89.26 107.81 78 107.81L78 107.81Z"></path></g></g></svg>
+        <h2 class="teaser__title">Test</h2>
+        <p class="teaser__text">Find known vulnerabilities in your dependencies</p>
       </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <li class="layout-cols__item teaser bg--shield-protect">
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="112" viewBox="0 0 155 193"><title>Protect</title><g fill="none"><path d="M77.6 188L5 135.8 5 14.2C5 14.2 31.8 4 77.7 4 123.6 4 150.3 14.2 150.3 14.2L150.3 135.8 77.6 188Z" style="fill:#69678B;stroke-width:8;stroke:#FFF"></path><path d="M78 8C78.3 8 78 182.8 78 182.8L146.2 133.1 146.2 16.9C146.2 16.9 122.5 8 78.3 8L78 8Z" fill="#48466D"></path><g fill="#F5F5F5"><path d="M65.8 57.8C64.4 50.5 67.8 45.1 74.3 43.8 80.9 42.5 86.1 46.3 87.5 53.4 87.5 53.4 88.2 57.2 88.2 57.2 88.3 57.6 88.6 57.8 89 57.7L97 56.2C97.3 56.1 97.6 55.8 97.5 55.4L96.7 51.5C96.7 51.5 96.7 51.4 96.7 51.4 94.1 38.7 84.2 31.5 72.4 33.8 60.7 36.1 54.1 46.6 56.4 59.3 56.4 59.4 56.4 59.4 56.4 59.4L58.5 70.2 67.8 68.4 65.8 57.8 65.8 57.8Z"></path></g><rect x="53" y="72.7" width="49" height="55.3" rx="1.2" style="stroke-width:10;stroke:#F5F5F5"></rect></g></svg>
+        <h2 class="teaser__title">Protect</h2>
+        <p class="teaser__text">Fix vulnerabilities through guided upgrades and patches</p>
+      </li>
 
+      <li class="layout-cols__item teaser bg--shield-monitor">
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="112" viewBox="0 0 155 193"><title>Monitor</title><g fill="none"><path d="M78 188L5 136 5 14C5 14 32 4 78 4 124 4 150 14 150 14L150 136 78 188Z" style="fill:#69678B;stroke-width:8;stroke:#FFF"></path><path d="M78 8C78 8 78 183 78 183L146 133 146 17C146 17 122 8 78 8L78 8Z" fill="#48466D"></path><g stroke="#F5F5F5"><path d="M32 111L42 83 61 128 89 44 110 118 117 97" stroke-width="8"></path><ellipse cx="30" cy="114" rx="7" ry="7" fill="#F5F5F5"></ellipse><ellipse cx="119" cy="93" rx="7" ry="7" fill="#F5F5F5"></ellipse></g></g></svg>
+        <h2 class="teaser__title">Monitor</h2>
+        <p class="teaser__text">Get notified about newly disclosed vulnerabilities in your dependencies</p>
+      </li>
+    </ul>
+
+    <form method="get" action="/auth/github">
+      <button type="submit">Sign up with GitHub</button>
+    </form>
+
+  </div>
+
+</section>
+
+<section id="try" class="backdrop-positive u--flat-bottom">
+
+  <div class="layout-container">
+
+    <div class="layout-cols">
+
+    <div class="layout-cols__item">
+
+      <h2>Your application is probably vulnerable</h2>
+      <p>14% of npm packages<span class="footnote">*</span> carry known vulnerabilities, and 80% of Snyk users find known vulnerabilities in their apps. To secure yours, install Snyk and <a href="https://snyk.io/docs/using-snyk/#wizard">run the wizard</a>.</p>
+
+      <p>Stay vulnerability-free by integrating Snyk into your CI and monitoring your applications for newly disclosed vulnerabilities.</p>
+
+      <p class="footnote">* based on testing the 32,000 most starred packages</p>
+
+    </div>
+
+    <div class="layout-cols__item--major">
+
+      <div class="screenshot--large">
+
+        <h3 class="screenshot__label">Example output</h3>
+
+<pre class="code">$ snyk wizard
+
+<span class="syn--green">?</span> <span class="syn--white syn--bold">High severity vulnerability found in bassmaster@1.5.1
+  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:bassmaster:20140927">https://snyk.io/vuln/npm:bassmaster:20140927</a>
+  - from: myapp@0.0.0 &gt; bassmaster@1.5.1</span> <span class="syn--blue">Upgrade</span>
+
+<span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability found in hapi@10.5.0
+  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:hapi:20151020">https://snyk.io/vuln/npm:hapi:20151020</a>
+  - from: myapp@0.0.0 &gt; hapi@10.5.0</span> <span class="syn--blue">Ignore</span>
+<span class="syn--green">?</span> <span class="syn--white syn--bold">[audit] Reason for ignoring vulnerability?</span> <span class="syn--blue">Not Exploitable</span>
+
+<span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability found in ms@0.1.0
+  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:ms:20151024">https://snyk.io/vuln/npm:ms:20151024</a>
+  - from: myapp@0.0.0 &gt; mongoose@4.1.12 &gt; ms@0.1.0</span>
+  Upgrade to mongoose@4.2.4
+<span class="syn--blue">❯ Patch (modifies files locally, updates policy)</span>
+  Set to ignore for 30 days
+  Skip</pre>
 </div>
+
+<div class="screenshot--small">
+<pre class="code">$ snyk wizard
+<span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability
+  found in ms@0.1.0
+  - info:
+    <a title="Vulnerability report" href="https://snyk.io/vuln/npm:ms:20151024">https://snyk.io/vuln/npm:ms…</a>
+  - from: myapp@0.0.0 &gt;
+    mongoose@4.1.12 &gt; ms@0.1.0</span>
+  Upgrade to mongoose@4.2.4
+<span class="syn--blue">❯ Patch</span>
+  Set to ignore for 30 days
+  Skip</pre>
+</div>
+<p class="u--centered">So now you know.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="u--flat-bottom">
+  <div class="layout-container layout-container--centered">
+    <h2>Protect your app against new vulnerabilities</h2>
+    <p>Use Snyk to test a public <strong class="link--cta icon-type--npm -sm">npm package</strong> or <strong class="link--cta icon-type--github -sm">GitHub repository</strong> for known vulnerabilities.</p>
+    <p><a href="/test/">Test now</a></p>
+  </div>
+</section>
+
+<section class="backdrop-positive u--flat-bottom">
+  <div class="layout-container layout-container--centered layout-container--skinny">
+    <h2 class="h3 u--push-top-m">Great teams are using Snyk</h2>
+    <ul class="logos">
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/bbc.png" alt="BBC">
+      </li>
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/paypal.png" alt="PayPal">
+      </li>
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/walmart.png" alt="Walmart">
+      </li>
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/macys.png" alt="Macy's">
+      </li>
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/warbyparker.png" alt="Warby Parker">
+      </li>
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/optimizely.png" alt="optimizely">
+      </li>
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/burberry.png" alt="Burberry">
+      </li>
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/hoodie.png" alt="Hood.ie">
+      </li>
+      <li class="logos__item">
+        <img class="logos__item__image" src="https://res.cloudinary.com/snyk/image/upload/v1448374694/jsbin.png" alt="jsbin">
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+</main>
