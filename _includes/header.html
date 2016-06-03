@@ -1,0 +1,55 @@
+<header id="header" class="site-header">
+  <script async src="/js/build/initial.min.js"></script>
+
+  <div id="layout-nav" class="layout-nav" style="visibility:hidden">
+  <noscript><div class="layout-nav"></noscript>
+
+    <script>
+    setTimeout(function() {
+      document.getElementById('layout-nav').style.visibility="visible";
+    },2000);
+    </script>
+
+    <nav id="nav-greedy" class="nav nav--header nav-greedy" aria-label="Global">
+
+      <a href="/" class="site-logo" id="site-logo">
+        <span class="site-logo__symbol">Snyk</span>
+      </a>
+
+      <ul class="nav__list nav-greedy__list" id="nav-greedy__list">
+
+        <span id="nav__list__items">
+          <li class="nav__list__item nav__list__item--dashboard">
+            <a class="nav__list__item__link">Dashboard</a>
+          </li>
+          <li class="nav__list__item nav__list__item--monitor">
+            <a class="nav__list__item__link">Monitor</a>
+          </li>
+        </span>
+        <li class="nav__list__item nav__list__item--test">
+          <a href="/test" class="nav__list__item__link nav__list__irg__item__link">Test</a>
+        </li>
+        <li class="nav__list__item nav__list__item--vuln ">
+          <a href="/vuln/" class="nav__list__item__link">VulnDB</a>
+        </li>
+        <li class="nav__list__item nav__list__item--docs">
+          <a href="/docs/" class="nav__list__item__link">Docs</a>
+        </li>
+        <span id="nav__list__item__account">
+          <li class="nav__list__item nav__list__item--account">
+            <a href="/login/" class="nav__list__item__link">Account</a>
+          </li>
+        </span>
+
+      </ul>
+
+      <button class="nav-greedy__button button--empty" type="button" id="nav-greedy__button">Menu</button>
+
+      <ul class='nav-greedy__list--hidden is-hidden'></ul>
+
+    </nav>
+
+  <noscript></div></noscript>
+
+  </div>
+</header>
