@@ -2,7 +2,31 @@
 
 {% include header.html %}
 
-{{content}}
+{{content | markdownify}}
+
+<style type="text/css">
+
+section:nth-child(odd),
+section:nth-child(even) {
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+section:nth-child(odd) {
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #eaeaea;
+}
+</style>
+
+{% for feature in site.features %}
+<section>
+  <div class="layout-container--tight">
+    <h2>{{ feature.title }}</h2>
+    {{feature.content}}
+  </div>
+</section>
+{% endfor %}
 
 {% include footer.html %}
 
