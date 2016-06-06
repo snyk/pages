@@ -1,5 +1,10 @@
 collections:
 - faqs
+- features
 
 # Build settings
-markdown: kramdown
+markdown:    kramdown
+highlighter: rouge
+kramdown:
+  auto_ids:       true
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
