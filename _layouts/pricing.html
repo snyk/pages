@@ -2,102 +2,116 @@
 
 {% include header.html %}
 
-<div class="layout-container">
+<main class="layout-stacked">
 
-{{content}}
+<div class="backdrop-positive">
 
+  <div class="layout-container u--centered u--push-bottom-xxl">
 
-<h1>Pricing</h1>
+  <h1 class="header__title">{{ page.title }}</h1>
 
-<p>Snyk repos are free for open source projects and limited individual use.</p>
+    <p class="header__description__info">{{page.description}}</p>
+    <p class="header__description__info"><span class="u--highlight">{{page.description-highlight}}</span></p>
 
-<p>Subscribe to a paid plan to collaborate on large numbers of private repositories.</p>
+  </div>
 
+</div>
 
-<table class="table-responsive" style="table-layout: fixed;">
-  <thead>
-    <tr><th></th>
-    <th>Starter</th>
-    <th>Team</th>
-    <th>Pro</th>
-    <th>Enterprise</th>
-  </tr></thead>
-  <tbody>
-    <tr>
-      <th></th>
-      <td>$19/month</td>
-      <td>$99/month</td>
-      <td>$449/month</td>
-      <td>Contact us</td>
-    </tr>
-    <tr>
-      <th></th>
-      <td><button class="button--tertiary" style="margin: 0 0 5px 0;" id="buttonPlan1">Start 14 day free trial</button></td>
-      <td><button class="button--tertiary" style="margin: 0 0 5px 0;" id="buttonPlan2">Start 14 day free trial</button></td>
-      <td><button class="button--tertiary" style="margin: 0 0 5px 0;" id="buttonPlan3">Start 14 day free trial</button></td>
-      <td><button class="button--tertiary" style="margin: 0 0 5px 0;">Contact us</button></td>
-    </tr><tr>
-      <th>Private Projects</th>
-      <td>Up to 5</td>
-      <td>Up to 25</td>
-      <td>Up to 150</td>
-      <td>Unlimited</td>
-    </tr>
-    <tr>
-      <th>Users</th>
-      <td>Unlimited</td>
-      <td>Unlimited</td>
-      <td>Unlimited</td>
-      <td>Unlimited</td>
-    </tr>
-    <tr>
-      <th>Open source projects</th>
-      <td>Unlimited</td>
-      <td>Unlimited</td>
-      <td>Unlimited</td>
-      <td>Unlimited</td>
-    </tr>
-    <tr>
-      <th>Features</th>
-      <td>Ci integration</td>
-      <td>Ci integration, User roles</td>
-      <td>Ci integration, User roles</td>
-      <td>Ci integration, User roles</td>
-    </tr>
-    <tr>
-      <th>Support</th>
-      <td>Standard</td>
-      <td>Standard</td>
-      <td>Priority</td>
-      <td>Custom</td>
-    </tr>
-  </tbody>
+<div class="layout-container u--centered">
 
-
-</table>
-
-
-<p>Free plan: limited to 5 private projects (unlimited for open source projects)</p>
-
-<button class="site-cta__form__button button--secondary" type="submit">Get free account</button>
-
-<div class="layout-container layout-container--centered layout-container--skinny">
-  <h2 class="h3 u--push-top">Great teams are using Snyk</h2>
-  <ul class="logos">
-    [logos]
+  <ul class="list list--horizontal js-only">
+    <li class="list__item js-toggle--annual"><strong>{{page.tab-annual-text}}</strong></li>
+    <li class="list__item js-toggle--monthly"><strong>{{page.tab-monthly-text}}</strong></li>
   </ul>
+
+  <span>{{page.pricing-explanation}}</span>
+
+  <div class="cards layout-cols--noflex layout-cols--4 u--push-top-xxxl">
+
+    {% for plan in page.plans %}
+    <div class="card card--plan layout-cols__item {% if plan.special %}card--plan--highlight{% endif %}">
+
+      <div class="card__header">
+        {% if plan.special %}<p class="card__info">{{plan.special-text}}</p>{% endif %}
+        <h2 class="card__title">{{plan.name}}</h2>
+      </div>
+
+      {% if plan.custom %}
+
+      <p class="card__subtitle"><span class="card__subtitle__lone">Custom</span></p>
+      <a href="mailto:support@snyk.io" class="button button--quaternary">Contact us</a>
+
+      {% else %}
+
+      <span class="js-toggle__content--annual">
+        <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-annual}}</strong>/month</p>
+        <button class="button--quaternary">{{plan.call-to-action-text}}</button>
+      </span>
+      <span class="js-toggle__content--monthly">
+        <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-monthly}}</strong>/month</p>
+        <button class="button--quaternary">{{plan.call-to-action-text}}</button>
+      </span>
+
+      {% endif %}
+
+      <div class="card__body">
+        <ul class="card__list">
+          {% for entitlement in plan.entitlements %}
+          <li class="card__list__item">{{entitlement}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+    {% endfor %}
+
+  </div>
+
 </div>
 
-<h2>FAQs</h2>
+<div class="backdrop-positive">
 
-{% for faq in site.faqs %}
-  <details>
-    <summary>{{ faq.question }}</summary>
-    {{faq.content}}
-  </details>
-{% endfor %}
+  <div class="layout-container">
+
+    <div class="u--centered">
+
+      <h2 class="h3">{{page.free-plan-title}}</h2>
+      <p>{{page.free-plan-description | markdownify}}</p>
+
+      <button class="button--stretch">Get free account</button>
+
+    </div>
+
+  </div>
 
 </div>
+
+</div>
+
+<div class="backdrop-positive layout-stacked__subsection">
+
+  <div class="layout-container">
+
+    <h2>FAQs</h2>
+    <div class="layout-binary">
+
+      {% for faq in site.faqs %}
+        <div class="layout-binary__item">
+          <h3 class="h5">{{ faq.question }}</h3>
+          {{faq.content}}
+        </div>
+      {% endfor %}
+
+    </div>
+
+    <hr/>
+    <p>More questions? <a href="/docs/faqs">See our extended FAQs</a></p>
+
+  </div>
+
+</div>
+
+</main>
 
 {% include footer.html %}
 
