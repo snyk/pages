@@ -12,7 +12,7 @@ image-caption: ""
 image-left: false 
 ---
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.
-* Cras ornare tristique elit.
-* Fusce lobortis lorem at ipsum semper sagittis.
+* Use Snyk Organisations to collaborate with your team
+* Administrator and Collaborator roles
+* Enable team members to find and fix vulnerabilities
+* Get the right people alerted about newly disclosed vulnerabilities
