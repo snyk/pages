@@ -32,6 +32,6 @@ Except for essential cookies, all cookies will expire after 1 year.
     <td>Session Cookie</td>
     <td>snyk.id</td>
     <td>Identify a user session, primarily after login</td>
-    <td>https://www.npmjs.com/package/express-session</td>
+    <td><a href="https://www.npmjs.com/package/express-session">npmjs.com/package/express-session</a></td>
   </tbody>
 </table>
