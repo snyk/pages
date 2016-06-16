@@ -3,7 +3,7 @@ title: "Acceptable use policy"
 date-modified: 23rd June 2016
 ---
 
-This acceptable use policy sets out the terms between you and us under which you may use any of our Services, the Documentation and/or the Service Data (as defined in the Terms of Service https://snyk.io/policies/, which this acceptable use policy forms part of).
+This acceptable use policy sets out the terms between you and us under which you may use any of our Services, the Documentation and/or the Service Data (as defined in the Terms of Service [https://snyk.io/policies/](https://snyk.io/policies/), which this acceptable use policy forms part of).
 
 ### Prohibited uses
 
@@ -71,7 +71,7 @@ Materials must not:
 
 (j) advocate, promote or assist any unlawful act or illegal activity such as (by way of example only) copyright infringement or computer misuse.
 
-If you disclose security vulnerabilities to us, you must do so by emailing us at security@snyk.io and not by posting to the snyk.io website.
+If you disclose security vulnerabilities to us, you must do so by emailing us at [security@snyk.io](mailto:security@snyk.io) and not by posting to the snyk.io website.
 
 ### Changes to the acceptable use policy
 

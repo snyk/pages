@@ -9,13 +9,13 @@ Please read these Terms of Service carefully before you start to use the Service
 
 By using the Services or installing our CLI tool, you are confirming that you accept these Terms of Service and that you agree to comply with them. If you do not agree to these Terms of Service, you must not use the Services.
 
-Other applicable terms
+### Other applicable terms
 
 These Terms of Service refer to the following additional terms, which also apply to your use of the Services:
 
-* Our Privacy Policy https://snyk.io/policies#privacy-policy, which sets out the terms on which we process any personal data we collect from you, or that you provide to us.
-* Our Acceptable Use Policy https://snyk.io/policies#acceptable-use-policy, which sets out the permitted uses and prohibited uses of our Services, including any material and data transmitted using the Services.
-* Our Cookie Policy https://snyk.io/policies#cookie-policy, which sets out information about the cookies on the Platform.
+* Our Privacy Policy at [https://snyk.io/policies#privacy-policy](https://snyk.io/policies#privacy-policy), which sets out the terms on which we process any personal data we collect from you, or that you provide to us.
+* Our Acceptable Use Policy at [https://snyk.io/policies#acceptable-use-policy](https://snyk.io/policies#acceptable-use-policy), which sets out the permitted uses and prohibited uses of our Services, including any material and data transmitted using the Services.
+* Our Cookie Policy [https://snyk.io/policies#cookie-policy](https://snyk.io/policies#cookie-policy), which sets out information about the cookies on the Platform.
 
 ### 1. Introduction
 
@@ -37,7 +37,7 @@ In the case of a company, you hereby warrant that you have authority to bind the
 
 ### 4. Rights we grant you
 
-We grant you a non-exclusive, non-transferable, revocable right to install and make use of the Services and to make use of the documentation available at https://snyk.io/docs (“Documentation”) and Service Data, solely for your internal business operations or otherwise for purposes relating to your trade, business or profession, and in accordance with these Terms of Service. This licence shall remain in effect until and unless these Terms of Service are terminated by you or us (see clause 13 for information about termination). You promise and agree that you will only make use of the Services, Documentation and Service Data within the scope of this licence and limits, terms and conditions set out in these Terms of Service, and that you will not redistribute or transfer the Services, Documentation or Service Data.
+We grant you a non-exclusive, non-transferable, revocable right to install and make use of the Services and to make use of the documentation available at [https://snyk.io/docs](https://snyk.io/docs) (“Documentation”) and Service Data, solely for your internal business operations or otherwise for purposes relating to your trade, business or profession, and in accordance with these Terms of Service. This licence shall remain in effect until and unless these Terms of Service are terminated by you or us (see clause 13 for information about termination). You promise and agree that you will only make use of the Services, Documentation and Service Data within the scope of this licence and limits, terms and conditions set out in these Terms of Service, and that you will not redistribute or transfer the Services, Documentation or Service Data.
 
 You acknowledge that all intellectual property rights in the Services, the Documentation, the Service Data and the Platform anywhere in the world belong to us or our licensors (even after installation onto a computer owned by you or integration into your system), and that you have no rights in or to the Services, Documentation, Service Data or the Platform other than the right to use each of them in accordance with the terms of these Terms of Service.
 
@@ -57,7 +57,7 @@ We will not be liable to you for our failure to find, fix and monitor dependenci
 
 ### 6. Accessing the Services
 
-You acknowledge that the extent of your use of the Services will depend on your subscription plan, and you further agree to only use the Services within the limits of such subscription plan. The default subscription plan is the ‘Free Plan’. Details about the Services available under each subscription plan can be found here: https://snyk.io/pricing. If, at any time whilst using the Services, you exceed the limit of your subscription plan, we will charge you, and you will pay, the relevant fees which apply to such excess use as set out above. We will use our reasonable endeavours to notify you when the limit is close to being exceeded; however, we accept no liability for failure to do this. You are solely responsible for monitoring your use of the Services within the permitted limits.
+You acknowledge that the extent of your use of the Services will depend on your subscription plan, and you further agree to only use the Services within the limits of such subscription plan. The default subscription plan is the ‘Free Plan’. Details about the Services available under each subscription plan can be found here: [https://snyk.io/pricing](https://snyk.io/pricing). If, at any time whilst using the Services, you exceed the limit of your subscription plan, we will charge you, and you will pay, the relevant fees which apply to such excess use as set out above. We will use our reasonable endeavours to notify you when the limit is close to being exceeded; however, we accept no liability for failure to do this. You are solely responsible for monitoring your use of the Services within the permitted limits.
 
 Whilst we will make reasonable efforts to ensure the Services are operational 24 hours a day, 7 days a week, we do not guarantee that the Services will always be available or be uninterrupted. In particular, but without limitation:
 
@@ -68,13 +68,13 @@ We reserve the right to suspend your access to or use of the Services without no
 
 ### 7. Using the Services
 
-You agree to comply with the Acceptable Use Policy https://snyk.io/policies#acceptable-use-policy with regards to your use of the Services, Service Data and Documentation, including any material and data you transmit using the Services. This Acceptable Use Policy is hereby incorporated into these Terms of Use.
+You agree to comply with the Acceptable Use Policy at [https://snyk.io/policies#acceptable-use-policy](https://snyk.io/policies#acceptable-use-policy) with regards to your use of the Services, Service Data and Documentation, including any material and data you transmit using the Services. This Acceptable Use Policy is hereby incorporated into these Terms of Use.
 
 A breach of the Acceptable Use Policy will constitute a breach of these Terms of Service, and may result in termination or suspension of your account in accordance with these Terms of Service.
 
 ### 8. Purchases
 
-If you choose a paid-subscription plan, you agree to pay us fees in accordance with the relevant pricing plan. Details of those fees are set out on our Pricing Page https://snyk.io/pricing (which do not include VAT).
+If you choose a paid-subscription plan, you agree to pay us fees in accordance with the relevant pricing plan. Details of those fees are set out on our Pricing Page at [https://snyk.io/pricing](https://snyk.io/pricing) (which do not include VAT).
 
 Depending on the pricing plan chosen by you, our third party payment processor will (and you hereby authorise it to) bill your payment card for the applicable fee in advance on or shortly after the date you subscribe for a paid plan and each month or anniversary thereafter, until terminated by you or us. The fees are non-refundable, except as expressly stated otherwise in these Terms of Service.
 
@@ -90,13 +90,13 @@ We claim no intellectual property rights in and to your applications, project or
 
 However, to enable your use of the Services, we do need to inspect portions of your project and send parts of it to our servers. This information includes, but is not limited to, information relating to the project (such as the project name and metadata), information relating to the dependencies, including open source and closed source but locally available to our tool, being used and how they are referenced by the project, Snyk-related files and environmental information (“Project Information”). We may also collect Project Information for each of the project’s dependencies (“Dependency Information”). For these purposes, we require, and you hereby grant us, a worldwide, non-exclusive, royalty free licence to store, use, reproduce, display and transmit the Project Information, the Dependency Information and any other materials transmitted via the Service to the extent necessary to enable your use of the Services, including monitoring services. This licence shall remain in effect until and unless these Terms of Service are terminated by you or us.
 
-In addition to the rights granted to us above, we also require, and you hereby grant to us, a licence to store, use, reproduce, display and transmit the Project Information, the Dependency Information and any other materials transmitted via the Service for analytical purposes (for example, so that we can see what stage the project was in when it was deleted) and to improve our Services. This licence shall remain in effect unless and until you email us at support@snyk.io and expressly ask us to delete such data from our database. For the avoidance of doubt, this licence will not end upon termination of these Terms of Service or where you delete the relevant project on the project page of the Platform.  
+In addition to the rights granted to us above, we also require, and you hereby grant to us, a licence to store, use, reproduce, display and transmit the Project Information, the Dependency Information and any other materials transmitted via the Service for analytical purposes (for example, so that we can see what stage the project was in when it was deleted) and to improve our Services. This licence shall remain in effect unless and until you email us at [support@snyk.io](mailto:support@snyk.io) and expressly ask us to delete such data from our database. For the avoidance of doubt, this licence will not end upon termination of these Terms of Service or where you delete the relevant project on the project page of the Platform.  
 
 ### 10. Usage Data Analysis
 
 Our CLI tool reports to us an event for each command you issue, including, but not limited to, the version of the CLI tool, the versions of surrounding tools such as node and npm, the Snyk User and organization ID, the arguments and inputs provided to the CLI, and details about duration, success and failure of CLI actions. This information is used by us for analytical purposes and to improve our Services. It allows us to better understand how the CLI too is used, and informs our product development decisions.
 
-If you would like to opt out of this, you can do so by setting the `disable-analytics` configuration item, as explained in our FAQ page at https://snyk.io/docs/faqs/#using-snyk.
+If you would like to opt out of this, you can do so by setting the `disable-analytics` configuration item, as explained in our FAQ page at [https://snyk.io/docs/faqs/#using-snyk](https://snyk.io/docs/faqs/#using-snyk).
 
 ### 11. Limitation of Liability
 
@@ -113,7 +113,7 @@ All warranties, conditions, representations or other terms implied by statute or
 
 ### 12. Indemnity
 
-You shall defend, indemnify and hold harmless Snyk against claims, actions, proceedings, losses, damages, expenses and costs (including without limitation court costs and reasonable legal fees) arising out of or in connection with your use of the Services, Documentation, Service Data or Platform in breach of these Terms of Service or other agreements referred to in these Terms of Service (including, but not limited to, the acceptable use policy https://snyk.io/policies#acceptable-use-policy).
+You shall defend, indemnify and hold harmless Snyk against claims, actions, proceedings, losses, damages, expenses and costs (including without limitation court costs and reasonable legal fees) arising out of or in connection with your use of the Services, Documentation, Service Data or Platform in breach of these Terms of Service or other agreements referred to in these Terms of Service (including, but not limited to, the acceptable use policy [https://snyk.io/policies#acceptable-use-policy](https://snyk.io/policies#acceptable-use-policy)).
 
 ### 13. Termination
 

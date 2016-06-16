@@ -29,13 +29,13 @@ Please note that we do not collect payment information from you. This will be co
 
 ### Cookies
 
-Our Platform uses cookies to distinguish you from other users of our Platform. This helps us to provide you with a good experience when you browse our Platform and also allows us to improve our Platform. For detailed information on the cookies we use and the purposes for which we use them see our Cookie policy https://snyk.io/policies/.
+Our Platform uses cookies to distinguish you from other users of our Platform. This helps us to provide you with a good experience when you browse our Platform and also allows us to improve our Platform. For detailed information on the cookies we use and the purposes for which we use them see our Cookie policy [https://snyk.io/policies/](https://snyk.io/policies/).
 
 ### Uses made of the information
 
 We use information held about you in the following ways:
 
-* to carry out our obligations arising from any contracts entered into between you and us (including the Terms of Service https://snyk.io/policies/) and to provide you with the information, products and services that you request from us;
+* to carry out our obligations arising from any contracts entered into between you and us (including the Terms of Service [https://snyk.io/policies/](https://snyk.io/policies/)) and to provide you with the information, products and services that you request from us;
 * to provide you with information about other goods and services we offer that are similar to those that you have already purchased or enquired about;
 * to provide you with information about goods or services we feel may interest you;
 * to notify you about changes to our services;
@@ -67,7 +67,7 @@ Unfortunately, the transmission of information via the internet is not completel
 
 ### Your Rights
 
-You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to any third party for such purposes. You can exercise your right to prevent such processing by checking certain boxes on the forms we use to collect your data. You can also exercise the right at any time by contacting us at contact@snyk.io.
+You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to any third party for such purposes. You can exercise your right to prevent such processing by checking certain boxes on the forms we use to collect your data. You can also exercise the right at any time by contacting us at [contact@snyk.io](contact@snyk.io).
 
 ### Third Party Platforms
 
@@ -83,4 +83,4 @@ Any changes we may make to our privacy policy in the future will be posted on th
 
 ### Contact
 
-Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to contact@snyk.io.
+Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to [contact@snyk.io](mailto:contact@snyk.io).

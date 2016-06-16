@@ -17,4 +17,4 @@ To remove the flag, run:
 snyk config unset disable-analytics
 ```
 
-If you have any questions or problems, please email us.
+If you have any questions or problems, please email us at [support@snyk.io](mailto:support@snyk.io).
