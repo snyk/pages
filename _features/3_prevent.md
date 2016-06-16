@@ -12,7 +12,6 @@ image-caption: ""
 image-left: true 
 ---
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.
-* Cras ornare tristique elit.
-* Fusce lobortis lorem at ipsum semper sagittis.
+* Snyk tests in your GitHub pull requests flag code changes that add vulnerable dependencies
+* Add `snyk test` to your Continuous Integration process to fail tests when vulnerabilities are detected
+* Customise for which severity level tests should fail, to suit your team’s needs and priorities
