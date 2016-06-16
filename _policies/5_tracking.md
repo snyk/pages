@@ -1,6 +1,6 @@
 ---
 title: Tracking and Analytics
-date-modified: 21st June 2016
+date-modified: 23rd June 2016
 ---
 
 Our CLI tool reports an event for each command to our analytics, including the version of the CLI tool, the User ID, and the package name. This allows us to better understand how the CLI client is used, and informs our product development decisions.

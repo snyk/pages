@@ -1,6 +1,6 @@
 ---
 title: Terms of Services
-date-modified: 21st June 2016
+date-modified: 23rd June 2016
 ---
 
 These Terms of Service (together with the documents referred to in it) tell you the terms on which you may make use of the services which are made available to you via our software platform at https://snyk.io and our CLI tool (together, the “Platform”) (the “Services”), as well as all information and data made available to you in connection with the Services (“Service Data”).

@@ -1,6 +1,6 @@
 ---
 title: "Acceptable use policy"
-date-modified: 21st June 2016
+date-modified: 23rd June 2016
 ---
 
 This acceptable use policy sets out the terms between you and us under which you may use any of our Services, the Documentation and/or the Service Data (as defined in the Terms of Service https://snyk.io/policies/, which this acceptable use policy forms part of).

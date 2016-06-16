@@ -1,6 +1,6 @@
 ---
 title: Cookie policy
-date-modified: 21st June 2016
+date-modified: 23rd June 2016
 ---
 
 ***Please read this policy carefully before using our website.***
