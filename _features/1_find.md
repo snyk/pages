@@ -12,7 +12,7 @@ image-caption: ""
 image-left: false
 ---
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.
-* Cras ornare tristique elit.
-* Fusce lobortis lorem at ipsum semper sagittis.
+* Find vulnerabilities with Snyk CLI
+* Check all your GitHub repos for vulnerabilities
+* Scrutinise node.js packages before using them
+* All powered by Snyk’s own vulnerability database
