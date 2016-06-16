@@ -1,11 +1,15 @@
 ---
+# Page title.
 title: Find
 
-image: http://placehold.it/350x150 # Image should be served via https.
+# Image should be served via https.
+image: http://placehold.it/350x150
 
-image-caption: "" # Used as the alt text
+# Used as the alt text.
+image-caption: ""
 
-image-left: false # Set to true if you want the image on the left.
+# Set to true if you want the image on the left.
+image-left: false
 ---
 
 * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
