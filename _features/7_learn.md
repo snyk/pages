@@ -12,7 +12,6 @@ image-caption: ""
 image-left: true
 ---
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.
-* Cras ornare tristique elit.
-* Fusce lobortis lorem at ipsum semper sagittis.
+* Subscribe to Snyk’s vulnerability database to find out about new vulnerabilities first
+* Learn about exploitability and recommended remediations
+* Curated by Snyk’s own research team
