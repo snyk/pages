@@ -1,6 +1,7 @@
 collections:
 - faqs
 - features
+- policies
 
 # Build settings
 markdown:    kramdown
