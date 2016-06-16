@@ -98,7 +98,7 @@
       {% for faq in site.faqs %}
         <div class="layout-binary__item">
           <h3 class="h5">{{ faq.question }}</h3>
-          {{faq.content}}
+          {{faq.content | markdownify}}
         </div>
       {% endfor %}
 

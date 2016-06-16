@@ -1,3 +1,4 @@
 ---
-question: [Something about VAT]
+# Question title. Plaintext only.
+question: "[Something about VAT]"
 ---

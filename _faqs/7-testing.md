@@ -1,3 +1,4 @@
 ---
-question: Does testing my private project cost anything?
+# Question title. Plaintext only.
+question: "Does testing my private project cost anything?"
 ---
