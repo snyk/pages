@@ -12,7 +12,7 @@ image-caption: ""
 image-left: true 
 ---
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.
-* Cras ornare tristique elit.
-* Fusce lobortis lorem at ipsum semper sagittis.
+* Get alerted when newly disclosed vulnerabilities affect your projects
+* Email notifications for new vulnerabilities and fixes
+* Automatic GitHub pull requests to fix the new vulnerability
+* Comprehensive information and remediation guidance for vulnerabilities
