@@ -1,6 +1,6 @@
 ---
 # Page title.
-title: Collaborate
+title: Fix
 
 # Image should be served via https.
 image: http://placehold.it/350x150
@@ -9,7 +9,7 @@ image: http://placehold.it/350x150
 image-caption: ""
 
 # Set to true if you want the image on the left.
-image-left: false 
+image-left: false
 ---
 
 * Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
