@@ -12,7 +12,7 @@ image-caption: ""
 image-left: false
 ---
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.
-* Cras ornare tristique elit.
-* Fusce lobortis lorem at ipsum semper sagittis.
+* Upgrade or patch vulnerable dependencies
+* Use the interactive Snyk Wizard to apply fixes quickly
+* Get pull requests from Snyk with fixes for your GitHub repos
+* Create pull requests with the fixes you want
