@@ -17,7 +17,6 @@ images:
    image-caption: "blah"
 ---
 
-* Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-* Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in.
-* Cras ornare tristique elit.
-* Fusce lobortis lorem at ipsum semper sagittis.
+* Integrate your GitHub repositories to be monitored automatically
+* Add Snyk to your Continuous Integration and Deployment process
+* Modify the Snyk policy to make the integration work for your team
