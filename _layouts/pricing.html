@@ -2,6 +2,11 @@
 
 {% include header.html %}
 
+<!-- For JS browsers, disable the monthly class by default -->
+<script>
+document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}',0);
+</script>
+
 <main class="layout-stacked">
 
 <div class="backdrop-positive">
@@ -111,5 +116,11 @@
 </main>
 
 {% include footer.html %}
+
+{% include foot-scripts.html %}
+
+<script>
+document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:block}',0);
+</script>
 
 {% include foot.html %}
