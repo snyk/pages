@@ -3,7 +3,7 @@
 title: Integrate
 
 # Image should be served via https.
-image: http://res.cloudinary.com/snyk/image/upload/q_100/v1466178585/features/features-integrate_scaled.png
+image: https://res.cloudinary.com/snyk/image/upload/q_100/v1466178585/features/features-integrate_scaled.png
 
 # Used as the alt text.
 image-caption: ""
