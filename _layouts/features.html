@@ -5,8 +5,8 @@
 <div class="backdrop-alternate">
   <div class="layout-container u--centered">
     <h1 class="header__title">{{page.title}}</h1>
-    <p class="header__description__info u--flat-bottom">{{page.top-description}}</p>
-    <button class="button--tight">{{page.top-button-text}}</button>
+    <p class="header__description__info">{{page.top-description}}</p>
+    <button class="button--secondary button--tight">{{page.top-button-text}}</button>
   </div>
 </div>
 
@@ -14,7 +14,7 @@
 <div class="backdrop-alternate">
   <div class="layout-container">
     <div class="layout-cols layout-cols--centered layout-cols--ordered">
-      <div class="layout-cols__item {% if feature.image-left %}{% else %}layout-cols__item--first{% endif %}">
+      <div class="layout-cols__item feature {% if feature.image-left %}{% else %}layout-cols__item--first{% endif %}">
         <h2>{{ feature.title }}</h2>
         {{feature.content | markdownify}}
       </div>
