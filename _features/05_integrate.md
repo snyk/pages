@@ -1,20 +1,15 @@
 ---
 # Page title.
-title: Find
+title: Integrate
+
+# Image should be served via https.
+image: http://res.cloudinary.com/snyk/image/upload/q_100/v1466178585/features/features-integrate_scaled.png
+
+# Used as the alt text.
+image-caption: ""
 
 # Set to true if you want the image on the left.
 image-left: false
-
-# Handles multiple images (eg logos).
-images:
-   # Image should be served via https.
- - image: http://placehold.it/350x150
-   # Used as the alt text.
-   image-caption: "blah"
- - image: http://placehold.it/350x150
-   image-caption: "blah"
- - image: http://placehold.it/350x150
-   image-caption: "blah"
 ---
 
 * Integrate your GitHub repositories to be monitored automatically
