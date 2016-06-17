@@ -3,7 +3,7 @@
 title: Alert
 
 # Image should be served via https.
-image: http://placehold.it/350x150
+image: http://res.cloudinary.com/snyk/image/upload/q_100/v1466178585/features/features-alert_scaled.jpg
 
 # Used as the alt text.
 image-caption: ""
