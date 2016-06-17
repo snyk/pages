@@ -3,7 +3,7 @@
 title: Find
 
 # Image should be served via https.
-image: http://res.cloudinary.com/snyk/image/upload/v1466178593/features/features-find_scaled.jpg
+image: http://res.cloudinary.com/snyk/image/upload/q_100/v1466178593/features/features-find_scaled.jpg
 
 # Used as the alt text.
 image-caption: ""
