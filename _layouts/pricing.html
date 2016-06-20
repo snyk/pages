@@ -44,13 +44,13 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
       {% if plan.custom %}
 
       <p class="card__subtitle"><span class="card__subtitle__lone">Custom</span></p>
-      <a href="mailto:support@snyk.io" class="button button--quaternary">Contact us</a>
+      <a href="mailto:{{page.custom-plan-contact}}" class="button button--quaternary">Contact us</a>
 
       {% else %}
 
       <span class="js-toggle__content--annual">
         <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-annual}}</strong>/month</p>
-        <button class="button--quaternary">{{plan.call-to-action-text}}</button>
+        <button class="button--quaternary" onclick="startTrial(this, '{{plan.name}} plan')">{{plan.call-to-action-text}}</button>
       </span>
       <span class="js-toggle__content--monthly">
         <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-monthly}}</strong>/month</p>
