@@ -25,6 +25,8 @@
           {% endfor %}
         {% elsif feature.image %}
           <img src="{{feature.image}}" alt="{{feature.image-caption}}">
+        {% elsif feature.code %}
+{{feature.code}}
         {% endif %}
       </div>
     </div>
