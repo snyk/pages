@@ -1,60 +1,124 @@
 </main>
 
 <footer id="footer" class="site-footer">
-  <link rel="stylesheet" href="/style/build/footer.min.css"><script> </script>
+  <link rel="stylesheet" href="/style/build/footer.{{#if settings.production}}min.{{/if}}css?v={{cssMd5.footer_css}}"><script> </script>{{!-- Why this is here: https://jakearchibald.com/2016/link-in-body/ --}}
 
-    <div id="signup" class="backdrop-bright site-cta site-cta--primary">
+  <div class="nav nav--footer layout-container">
 
-      <div class="layout-container--skinny">
-
-        <form class="site-cta__form" method="get" action="/auth/github">
-          <button class="site-cta__form__button button--secondary" type="submit">Sign up with GitHub</button>
-        </form>
-
-        <p class="site-cta__disclaimer">We don't need access to your repositories, just your email address.</p>
-
-      </div>
-
+    {{!-- primary CTA --}}
+    {{#unless user.flags}}
+    <div id="signup" class="site-cta nav__group nav__group--large">
+      <h2 class="nav__list__item__heading">Get free account</h2>
+      <form class="site-cta__form" method="get" action="/auth/github">
+        <button class="button--secondary button--stretch" type="submit">Sign up with GitHub</button>
+      </form>
     </div>
+    {{/unless}}
 
-
-  <div class="layout-nav">
-
-    <nav class="nav nav--footer nav--social">
-      <span class="nav__list__item__label">Snyk on:</span>
+    <nav class="nav__group">
+      <h2 class="nav__list__item__heading">Product</h2>
       <ul class="nav__list">
+        {{#feature user 'billing'}}
         <li class="nav__list__item">
-          <a href="https://twitter.com/snyksec" class="nav__list__item__link">Twitter</a>
+          <a href="/features" class="nav__list__item__link">Features</a>
         </li>
         <li class="nav__list__item">
-          <a href="mailto:contact@snyk.io" class="nav__list__item__link">Email</a>
+          <a href="/pricing" class="nav__list__item__link">Pricing</a>
+        </li>
+        {{/feature}}
+        <li class="nav__list__item">
+          <a href="/test#github-repo" class="nav__list__item__link">Test with GitHub</a>
         </li>
         <li class="nav__list__item">
-          <a href="https://github.com/Snyk/" class="nav__list__item__link">Github</a>
-        </li>
-        <li class="nav__list__item">
-          <a href="https://www.npmjs.com/snyk" class="nav__list__item__link">npmjs.com</a>
+          <a href="/test#local-project" class="nav__list__item__link">Test with CLI</a>
         </li>
       </ul>
     </nav>
 
-    <nav class="nav nav--footer">
+    <nav class="nav__group">
+      <h2 class="nav__list__item__heading">Resources</h2>
       <ul class="nav__list">
         <li class="nav__list__item">
-          <a href="/about/" class="nav__list__item__link">About</a>
+          <a href="/vuln/" class="nav__list__item__link">VulnDB</a>
         </li>
         <li class="nav__list__item">
           <a href="/blog/" class="nav__list__item__link">Blog</a>
         </li>
         <li class="nav__list__item">
-          <a href="https://github.com/snyk/support" class="nav__list__item__link">Support</a>
+          <a href="/docs" class="nav__list__item__link">Documentation</a>
         </li>
         <li class="nav__list__item">
-          <a href="/policies/" class="nav__list__item__link">Policies</a>
+          <a href="/docs/faqs" class="nav__list__item__link">FAQs</a>
+        </li>
+        <li class="nav__list__item">
+          <a href="https://github.com/snyk/support" class="nav__list__item__link">Support</a>
         </li>
       </ul>
     </nav>
 
+    <nav class="nav__group {{#if user.flags}}nav__group--large{{/if}}">
+      <h2 class="nav__list__item__heading">Company</h2>
+      <ul class="nav__list">
+        <li class="nav__list__item">
+          <a href="/about" class="nav__list__item__link">About</a>
+        </li>
+        <li class="nav__list__item">
+          <a href="https://github.com/Snyk/jobs" class="nav__list__item__link">Jobs</a>
+        </li>
+        <li class="nav__list__item">
+          <a href="mailto:contact@snyk.io" class="nav__list__item__link">Contact</a>
+        </li>
+        <li class="nav__list__item">
+          <a href="/policies" class="nav__list__item__link">Policies</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="nav__group nav__group--large">
+      <h2 class="nav__list__item__heading">Find us online</h2>
+      <h3 class="nav__list__item__label">Stay up to date</h3>
+      <ul class="social-list social-list--l">
+        <li class="social-list__item">
+          <a href="https://twitter.com/snyksec" class="social-list__link--twitter">
+            <span class="social-list__item__text">Twitter</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+            <a href="https://www.youtube.com/channel/UCoJ7VbCYRKVK2-I-dUV4XRA" class="social-list__link--youtube">
+              <span class="social-list__item__text">Youtube</span>
+            </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.facebook.com/snyksec" class="social-list__link--facebook">
+            <span class="social-list__item__text">Facebook</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/company/snyk" class="social-list__link--linkedin">
+            <span class="social-list__item__text">LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+
+      <h3 class="nav__list__item__label">Track our development</h3>
+      <ul class="social-list social-list--l">
+        <li class="social-list__item">
+          <a href="https://github.com/Snyk/" class="social-list__link--github">
+            <span class="social-list__item__text">Github</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.npmjs.com/snyk" class="social-list__link--npm">
+            <span class="social-list__item__text">npmjs.com</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="layout-container">
+    <small class="subhead">© 2016 Snyk Ltd.</small>
   </div>
 
 </footer>
