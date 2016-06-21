@@ -101,6 +101,7 @@
       {% endfor %}
     </ul>
   </div>
+  {% if testimonial.quote %}
   <div class="layout-stacked__section layout-container--raised">
     <div class="layout-container--tight layout-container--short layout-container--raised">
       {% for testimonial in page.testimonials %}
@@ -114,6 +115,7 @@
       {% endfor %}
     </div>
   </div>
+  {% endif %}
 </div>
 {% endif %}
 
