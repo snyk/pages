@@ -2,7 +2,6 @@
 
 {% include header.html %}
 
-<main class="layout-stacked">
 <link rel="stylesheet" href="/style/build/main.min.css?c4469be4aa9a568fae7e98722e2e95de"><script> </script><!-- Why this is here: https://jakearchibald.com/2016/link-in-body/ -->
 
 <div class="backdrop-dark">
@@ -61,46 +60,22 @@
 <div class="layout-container">
   <h2 class="container-title u--centered">{{page.security-heading}}</h2>
   <p class="u--centered text--complement byline">{{page.security-description}}</p>
-<div class="screenshot--large">
-<h3 class="screenshot__label">Example output</h3>
-<pre class="code"><span class="syn--block">$ snyk wizard</span>
-<span class="syn--block"><span class="syn--green">?</span> <span class="syn--white syn--bold">High severity vulnerability found in bassmaster@1.5.1
-  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:bassmaster:20140927">https://snyk.io/vuln/npm:bassmaster:20140927</a>
-  - from: myapp@0.0.0 > bassmaster@1.5.1</span> <span class="syn--blue">Upgrade</span>
-</span>
-<span class="syn--block"><span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability found in hapi@10.5.0
-  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:hapi:20151020">https://snyk.io/vuln/npm:hapi:20151020</a>
-  - from: myapp@0.0.0 > hapi@10.5.0</span> <span class="syn--blue">Ignore</span>
-<span class="syn--green">?</span> <span class="syn--white syn--bold">[audit] Reason for ignoring vulnerability?</span> <span class="syn--blue">Not Exploitable</span>
-</span>
-<span class="syn--block"><span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability found in ms@0.1.0
-  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:ms:20151024">https://snyk.io/vuln/npm:ms:20151024</a>
-  - from: myapp@0.0.0 > mongoose@4.1.12 > ms@0.1.0</span>
-  Upgrade to mongoose@4.2.4
-<span class="syn--blue">❯ Patch (modifies files locally, updates policy)</span>
-  Set to ignore for 30 days
-  Skip</pre></span>
+  {% if page.security-image %}
+  <div class="u--centered">
+    <img src="{{page.security-image}}" alt="">
+  </div>
+  {% else %}
+  <div class="screenshot--large">
+    {% include mock-cli-output.html %}
+  </div>
+  {% endif %}
+
+  <p class="u--centered u--flat-bottom byline"><a href="{{page.security-link-url}}">{{page.security-link-text}}</a></p>
+
+  </div>
 </div>
 
-<div class="screenshot--small">
-<pre class="code"><span class="syn--block">$ snyk wizard</span>
-<span class="syn--block"><span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability
-  found in ms@0.1.0
-  - info:
-    <a title="Vulnerability report" href="https://snyk.io/vuln/npm:ms:20151024">https://snyk.io/vuln/npm:ms…</a>
-  - from: myapp@0.0.0 >
-    mongoose@4.1.12 > ms@0.1.0</span>
-  Upgrade to mongoose@4.2.4
-<span class="syn--blue">❯ Patch</span>
-  Set to ignore for 30 days
-  Skip</span></pre>
-</div>
-
-<p class="u--centered u--flat-bottom byline"><a href="{{page.security-link-url}}">{{page.security-link-text}}</a></p>
-
-</div>
-</div>
-
+{% if page.dev-title-include %}
 <div class="backdrop-positive">
   <div class="layout-container--tight">
     <h2 class="u--centered u--push-top-s">{{page.dev-title}}</h2>
@@ -112,7 +87,9 @@
     <p class="byline u--centered"><a href="{{page.dev-link-url}}">{{page.dev-link-text}}</a></p>
   </div>
 </div>
+{% endif %}
 
+{% if page.team-heading-include %}
 <div class="backdrop-positive layout-stacked__content--secondary">
   <div class="layout-container layout-container--centered layout-container--skinny">
     <h2 class="h3 u--push-top-s">{{page.team-heading}}</h2>
@@ -138,8 +115,7 @@
     </div>
   </div>
 </div>
-
-</main>
+{% endif %}
 
 {% include footer.html %}
 

@@ -1,0 +1,32 @@
+<h3 class="screenshot__label">Example output</h3>
+<pre class="code"><span class="syn--block">$ snyk wizard</span>
+<span class="syn--block"><span class="syn--green">?</span> <span class="syn--white syn--bold">High severity vulnerability found in bassmaster@1.5.1
+  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:bassmaster:20140927">https://snyk.io/vuln/npm:bassmaster:20140927</a>
+  - from: myapp@0.0.0 > bassmaster@1.5.1</span> <span class="syn--blue">Upgrade</span>
+</span>
+<span class="syn--block"><span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability found in hapi@10.5.0
+  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:hapi:20151020">https://snyk.io/vuln/npm:hapi:20151020</a>
+  - from: myapp@0.0.0 > hapi@10.5.0</span> <span class="syn--blue">Ignore</span>
+<span class="syn--green">?</span> <span class="syn--white syn--bold">[audit] Reason for ignoring vulnerability?</span> <span class="syn--blue">Not Exploitable</span>
+</span>
+<span class="syn--block"><span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability found in ms@0.1.0
+  - info: <a title="Vulnerability report" href="https://snyk.io/vuln/npm:ms:20151024">https://snyk.io/vuln/npm:ms:20151024</a>
+  - from: myapp@0.0.0 > mongoose@4.1.12 > ms@0.1.0</span>
+  Upgrade to mongoose@4.2.4
+<span class="syn--blue">❯ Patch (modifies files locally, updates policy)</span>
+  Set to ignore for 30 days
+  Skip</pre></span>
+</div>
+
+<div class="screenshot--small">
+<pre class="code"><span class="syn--block">$ snyk wizard</span>
+<span class="syn--block"><span class="syn--green">?</span> <span class="syn--white syn--bold">Low severity vulnerability
+  found in ms@0.1.0
+  - info:
+    <a title="Vulnerability report" href="https://snyk.io/vuln/npm:ms:20151024">https://snyk.io/vuln/npm:ms…</a>
+  - from: myapp@0.0.0 >
+    mongoose@4.1.12 > ms@0.1.0</span>
+  Upgrade to mongoose@4.2.4
+<span class="syn--blue">❯ Patch</span>
+  Set to ignore for 30 days
+  Skip</span></pre>
