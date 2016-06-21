@@ -20,7 +20,9 @@
 <div class="backdrop-bright u--centered">
   <div class="layout-container layout-container--skinny">
     <h2 class="h3 u--flat-bottom u--push-top-s">{{page.cta-heading}}</h2>
-    <button id="add--mygithub__submit" type="submit" class="u--push-bottom-m">{{page.cta-button-text}}</button>
+    <form id="add--mygithub" action="/add" method="get">
+      <button id="add--mygithub__submit" type="submit" class="u--push-bottom-m">{{page.cta-button-text}}</button>
+    </form>
     <div class="u--push-bottom-m"><a href="{{page.cta-link-url}}">{{page.cta-link-text}}</a></div>
   </div>
 </div>
