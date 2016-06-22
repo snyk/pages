@@ -51,7 +51,7 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
       <span class="js-toggle__content--annual">
         <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-annual}}</strong>/month</p>
         <form method="get" action="/subscribe/{{plan.annual-id}}">
-          <button class="button--quaternary button-trial" type="submit" data-purchase="{{plan.call-to-purchase-text}}">
+          <button class="button--quaternary button-trial plan-button" type="submit" data-purchase="{{plan.call-to-purchase-text}}" data-plan-name="{{plan.name}}">
             {{plan.call-to-action-text}}
           </button>
         </form>
@@ -59,7 +59,7 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
       <span class="js-toggle__content--monthly">
         <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-monthly}}</strong>/month</p>
         <form method="get" action="/subscribe/{{plan.monthly-id}}">
-          <button class="button--quaternary button-trial" type="submit" data-purchase="{{plan.call-to-purchase-text}}">
+          <button class="button--quaternary button-trial plan-button" type="submit" data-purchase="{{plan.call-to-purchase-text}}" data-plan-name="{{plan.name}}">
             {{plan.call-to-action-text}}
           </button>
         </form>
@@ -92,7 +92,7 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
       <p>{{page.free-plan-description | markdownify}}</p>
 
       <form method="get" action="/subscribe/FREE">
-        <button class="button--stretch"  type="submit">{{page.free-plan-call-to-action-text}}</button>
+        <button class="button--stretch"  id="get-free-account" type="submit">{{page.free-plan-call-to-action-text}}</button>
       </form>
 
     </div>
