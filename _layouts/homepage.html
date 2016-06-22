@@ -2,7 +2,6 @@
 
 {% include header.html %}
 
-<main class="layout-stacked">
 <link rel="stylesheet" href="/style/build/main.min.css?c4469be4aa9a568fae7e98722e2e95de"><script> </script><!-- Why this is here: https://jakearchibald.com/2016/link-in-body/ -->
 
 <div class="backdrop-dark">
@@ -21,7 +20,9 @@
 <div class="backdrop-bright u--centered">
   <div class="layout-container layout-container--skinny">
     <h2 class="h3 u--flat-bottom u--push-top-s">{{page.cta-heading}}</h2>
-    <button id="add--mygithub__submit" type="submit" class="u--push-bottom-m">{{page.cta-button-text}}</button>
+    <form id="add--mygithub" action="/add" method="get">
+      <button id="add--mygithub__submit" type="submit" class="u--push-bottom-m">{{page.cta-button-text}}</button>
+    </form>
     <div class="u--push-bottom-m"><a href="{{page.cta-link-url}}">{{page.cta-link-text}}</a></div>
   </div>
 </div>
@@ -88,7 +89,7 @@
   </div>
 </div>
 
-{% if page.team-heading-include %}
+{% if page.team-heading %}
 <div class="backdrop-positive layout-stacked__content--secondary">
   <div class="layout-container layout-container--centered layout-container--skinny">
     <h2 class="h3 u--push-top-s">{{page.team-heading}}</h2>
@@ -100,6 +101,7 @@
       {% endfor %}
     </ul>
   </div>
+  {% if page.testimonials %}
   <div class="layout-stacked__section layout-container--raised">
     <div class="layout-container--tight layout-container--short layout-container--raised">
       {% for testimonial in page.testimonials %}
@@ -113,10 +115,9 @@
       {% endfor %}
     </div>
   </div>
+  {% endif %}
 </div>
 {% endif %}
-
-</main>
 
 {% include footer.html %}
 

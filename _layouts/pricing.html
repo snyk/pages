@@ -16,7 +16,7 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
   <h1 class="header__title">{{ page.title }}</h1>
 
     <p class="header__description__info">{{page.description}}</p>
-    <p class="header__description__info"><span class="u--highlight">{{page.description-highlight}}</span></p>
+    <p><span class="u--highlight">{{page.description-highlight}}</span></p>
 
   </div>
 
@@ -50,11 +50,19 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
 
       <span class="js-toggle__content--annual">
         <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-annual}}</strong>/month</p>
-        <button class="button--quaternary" onclick="startTrial(this, '{{plan.name}} plan')">{{plan.call-to-action-text}}</button>
+        <form method="get" action="/subscribe/{{plan.annual-id}}">
+          <button class="button--quaternary button-trial" type="submit" data-purchase="{{plan.call-to-purchase-text}}">
+            {{plan.call-to-action-text}}
+          </button>
+        </form>
       </span>
       <span class="js-toggle__content--monthly">
         <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-monthly}}</strong>/month</p>
-        <button class="button--quaternary">{{plan.call-to-action-text}}</button>
+        <form method="get" action="/subscribe/{{plan.monthly-id}}">
+          <button class="button--quaternary button-trial" type="submit" data-purchase="{{plan.call-to-purchase-text}}">
+            {{plan.call-to-action-text}}
+          </button>
+        </form>
       </span>
 
       {% endif %}
@@ -83,7 +91,7 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
       <h2 class="h3">{{page.free-plan-title}}</h2>
       <p>{{page.free-plan-description | markdownify}}</p>
 
-      <form method="get" action="/auth/github">
+      <form method="get" action="/subscribe/FREE">
         <button class="button--stretch"  type="submit">{{page.free-plan-call-to-action-text}}</button>
       </form>
 
@@ -123,6 +131,13 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
 
 <script>
 document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:block}',0);
+var purchaseSearch = window.location.search.match(/purchase=(.*)&?/);
+if (purchaseSearch && purchaseSearch[1] === 'true') {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.button-trial'));
+  links.forEach(function (link) {
+    link.textContent = link.dataset.purchase;
+  });
+}
 </script>
 
 {% include foot.html %}

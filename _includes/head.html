@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Snyk</title>
-    <base href="https://snyk.io/">
+    {% unless jekyll.environment == "production" %}<base href="https://snyk.io/">{% endunless %}
     <meta name="description" content="So Now You Know">
     <link rel="icon" type="image/png" href="/style/asset/favicon/favicon.png" sizes="194x194">
     <link rel="icon" type="image/png" href="/style/asset/favicon/android-chrome.png" sizes="192x192">
@@ -27,4 +27,4 @@
     <script src="/js/vendor/html5shiv.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="section-{{page.layout}}">
