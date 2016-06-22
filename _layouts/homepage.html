@@ -23,7 +23,7 @@
     <form id="add--mygithub" action="/add" method="get">
       <button id="add--mygithub__submit" type="submit" class="u--push-bottom-m">{{page.cta-button-text}}</button>
     </form>
-    <div class="u--push-bottom-m"><a href="{{page.cta-link-url}}">{{page.cta-link-text}}</a></div>
+    <div class="u--push-bottom-m"><a id="test-public-link" href="{{page.cta-link-url}}">{{page.cta-link-text}}</a></div>
   </div>
 </div>
 
@@ -53,7 +53,7 @@
       {% endfor %}
       </div>
     </div>
-    {% if page.features-link-text %}<p class="u--centered u--flat-bottom byline"><a href="{{page.features-link-url}}">{{page.features-link-text}}</a></p>{% endif %}
+    {% if page.features-link-text %}<p class="u--centered u--flat-bottom byline"><a class="features-link" href="{{page.features-link-url}}">{{page.features-link-text}}</a></p>{% endif %}
   </div>
 </div>
 
@@ -72,7 +72,7 @@
   </div>
   {% endif %}
 
-  <p class="u--centered u--flat-bottom byline"><a href="{{page.security-link-url}}">{{page.security-link-text}}</a></p>
+  <p class="u--centered u--flat-bottom byline"><a id="cli-link" href="{{page.security-link-url}}">{{page.security-link-text}}</a></p>
 
   </div>
 </div>
@@ -85,7 +85,7 @@
       <li>{{options.option}}</li>
       {% endfor %}
     </ul>
-    <p class="byline u--centered"><a href="{{page.dev-link-url}}">{{page.dev-link-text}}</a></p>
+    <p class="byline u--centered"><a class="features-link" href="{{page.dev-link-url}}">{{page.dev-link-text}}</a></p>
   </div>
 </div>
 
