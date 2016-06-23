@@ -62,15 +62,15 @@
 <div class="layout-container">
   <h2 class="container-title u--centered">{{page.security-heading}}</h2>
   <p class="u--centered text--complement byline">{{page.security-description}}</p>
-  {% if page.security-image %}
   <div class="u--centered">
-    <img src="{{page.security-image}}" alt="">
+    <script type="text/javascript"
+      src="https://asciinema.org/a/ci8a2bs3uiys72s6mgzml0524.js"
+      id="asciicast-ci8a2bs3uiys72s6mgzml0524"
+      async data-autoplay="true"
+      data-size="small"
+      data-loop="true">
+    </script>
   </div>
-  {% else %}
-  <div class="screenshot--large">
-    {% include mock-cli-output.html %}
-  </div>
-  {% endif %}
 
   <p class="u--centered u--flat-bottom byline"><a id="cli-link" href="{{page.security-link-url}}">{{page.security-link-text}}</a></p>
 
@@ -122,4 +122,5 @@
 {% include footer.html %}
 
 {% include foot-scripts.html %}
+
 {% include foot.html %}
