@@ -105,8 +105,8 @@
   <div class="layout-stacked__section layout-container--raised">
     <div class="layout-container--tight layout-container--short layout-container--raised">
       {% for testimonial in page.testimonials %}
-      <div class="testimonial u--push-bottom-xl">
-        <img class="testimonial__image" src="{{testimonial.image-url}}" alt="{{testimonial.image-caption}}" style="width: 7.5em; height: 7.5em;" />
+      <div class="testimonial u--push-bottom-xl" style="display: block;">
+        <img class="testimonial__image" src="{{testimonial.image-url}}" alt="{{testimonial.image-caption}}" style="float: left; width: 7.5em; height: 7.5em;" />
         <blockquote class="testimonial__text u--push-bottom-xl">
           <p>“{{testimonial.quote}}”</p>
           <cite>— {{testimonial.author}}, <strong>{{testimonial.company}}</strong></cite>
