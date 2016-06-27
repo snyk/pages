@@ -7,7 +7,7 @@
     <h1 class="header__title">{{page.title}}</h1>
     <p class="header__description__info">{{page.top-description}}</p>
     <form method="get" action="/auth/github">
-      <button id="get-free-account" class="button--secondary button--tight">{{page.top-button-text}}</button>
+      <button id="get-free-account" class="button">{{page.top-button-text}}</button>
     </form>
   </div>
 </div>
@@ -39,8 +39,8 @@
 <div class="backdrop-alternate layout-stacked__content layout-stacked__content--secondary u--flat-bottom">
   <div class="layout-container u--centered">
     <p class="header__description__info">{{page.bottom-description}}</p>
-    <form id="add--mygithub" action="/add" method="get">
-      <button class="button--tight u--push-bottom-xxl" id="add--mygithub__submit" type="submit">{{page.bottom-button-text}}</button>
+    <form id="add--mygithub" action="/add" method="get" class="u--push-bottom-xl">
+      <button class="button" id="add--mygithub__submit" type="submit">{{page.bottom-button-text}}</button>
     </form>
   </div>
 </div>
