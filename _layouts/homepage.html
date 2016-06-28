@@ -21,7 +21,7 @@
   <div class="layout-container layout-container--skinny">
     <h2 class="h3 u--flat-bottom u--push-top-s">{{page.cta-heading}}</h2>
     <form id="add--mygithub" action="/add" method="get">
-      <button id="add--mygithub__submit" type="submit" class="u--push-bottom-m">{{page.cta-button-text}}</button>
+      <button id="add--mygithub__submit" type="submit" class="button button--primary u-button-margin-all">{{page.cta-button-text}}</button>
     </form>
     <div class="u--push-bottom-m"><a id="test-public-link" href="{{page.cta-link-url}}">{{page.cta-link-text}}</a></div>
   </div>
@@ -32,7 +32,7 @@
     <div class="layout-cols">
       <div class="layout-cols__item">
       {% for feature in page.features-left %}
-        <div class="teaser--media">
+        <div class="teaser">
           <div class="teaser__content">
             <h3 class="teaser__title">{{feature.feature-title}}</h3>
             <p class="teaser__text">{{feature.feature-description}}</p>
@@ -43,7 +43,7 @@
       </div>
       <div class="layout-cols__item">
       {% for feature in page.features-right %}
-        <div class="teaser--media">
+        <div class="teaser">
           <div class="teaser__content">
             <h3 class="teaser__title">{{feature.feature-title}}</h3>
             <p class="teaser__text">{{feature.feature-description}}</p>
