@@ -44,14 +44,14 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
       {% if plan.custom %}
 
       <p class="card__subtitle"><span class="card__subtitle__lone">Custom</span></p>
-      <a href="mailto:{{page.custom-plan-contact}}" class="button button--tertiary u-button-margin-bottom">Contact us</a>
+      <a href="mailto:{{page.custom-plan-contact}}" class="button button--tertiary u-button-margin-bottom u-card__button--tertiary">Contact us</a>
 
       {% else %}
 
       <span class="js-toggle__content--annual">
         <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-annual}}</strong>/month</p>
         <form method="get" action="/subscribe/{{plan.annual-id}}">
-          <button class="button button--tertiary u-button-margin-bottom button-trial plan-button" type="submit" data-purchase="{{plan.call-to-purchase-text}}" data-plan-name="{{plan.name}}">
+          <button class="button button--tertiary u-button-margin-bottom u-card__button--tertiary button-trial plan-button" type="submit" data-purchase="{{plan.call-to-purchase-text}}" data-plan-name="{{plan.name}}">
             {{plan.call-to-action-text}}
           </button>
         </form>
@@ -59,7 +59,7 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
       <span class="js-toggle__content--monthly">
         <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-monthly}}</strong>/month</p>
         <form method="get" action="/subscribe/{{plan.monthly-id}}">
-          <button class="button button--tertiary u-button-margin-bottom button-trial plan-button" type="submit" data-purchase="{{plan.call-to-purchase-text}}" data-plan-name="{{plan.name}}">
+          <button class="button button--tertiary u-button-margin-bottom u-card__button--tertiary button-trial plan-button" type="submit" data-purchase="{{plan.call-to-purchase-text}}" data-plan-name="{{plan.name}}">
             {{plan.call-to-action-text}}
           </button>
         </form>
