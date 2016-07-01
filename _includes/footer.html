@@ -6,14 +6,12 @@
   <div class="nav nav--footer layout-container">
 
     {{!-- primary CTA --}}
-    {{#unless user.flags}}
     <div id="signup" class="site-cta nav__group nav__group--large">
       <h2 class="nav__list__item__heading">Get free account</h2>
       <form class="site-cta__form" method="get" action="/auth/github">
         <button class="button" type="submit">Sign up with GitHub</button>
       </form>
     </div>
-    {{/unless}}
 
     <nav class="nav__group">
       <h2 class="nav__list__item__heading">Product</h2>
@@ -54,7 +52,7 @@
       </ul>
     </nav>
 
-    <nav class="nav__group {{#if user.flags}}nav__group--large{{/if}}">
+    <nav class="nav__group">
       <h2 class="nav__list__item__heading">Company</h2>
       <ul class="nav__list">
         <li class="nav__list__item">
@@ -113,7 +111,6 @@
       </ul>
     </nav>
   </div>
-
 
   <div class="layout-container">
     <small class="subhead">© 2016 Snyk Ltd.</small>
