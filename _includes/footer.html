@@ -6,7 +6,7 @@
   <div class="nav nav--footer layout-container">
 
     {{!-- primary CTA --}}
-    {{#unless user.id}}
+    {{#unless user.flags}}
     <div id="signup" class="site-cta nav__group nav__group--large">
       <h2 class="nav__list__item__heading">Get free account</h2>
       <form class="site-cta__form" method="get" action="/auth/github">
