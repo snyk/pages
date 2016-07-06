@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Language" content="en-us">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Snyk</title>
+    <title>{% if page.title %}{{page.title}}{% else %}Snyk{% endif %}</title>
+    <meta name="description" content="{% if page.meta-description %}{{page.meta-description}}{% else %}So Now You Know{% endif %}">
     {% unless jekyll.environment == "production" %}<base href="https://snyk.io/">{% endunless %}
-    <meta name="description" content="So Now You Know">
     <link rel="icon" type="image/png" href="/style/asset/favicon/favicon.png" sizes="194x194">
     <link rel="icon" type="image/png" href="/style/asset/favicon/android-chrome.png" sizes="192x192">
     <link rel="apple-touch-icon" href="/style/asset/favicon/apple-touch-icon.png" sizes="180x180">
@@ -21,7 +21,7 @@
     <meta name="twitter:image" property="og:image" content="/images/snyk-avatar.png">
     <meta name="twitter:site" content="@snyksec">
     <meta name="twitter:title" property="og:title" content="Snyk">
-    <meta name="twitter:description" property="og:description" content="Find &amp; fix known vulnerabilities in Node.js dependencies.">
+    <meta name="twitter:description" property="og:description" content="{% if page.meta-description %}{{page.meta-description}}{% else %}So Now You Know{% endif %}">
     <link rel="stylesheet" href="/style/build/all.min.css">
     <!--[if lt IE 9]>
     <script src="/js/vendor/html5shiv.js"></script>
