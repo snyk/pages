@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" property="og:image" content="/images/snyk-avatar.png">
     <meta name="twitter:site" content="@snyksec">
-    <meta name="twitter:title" property="og:title" content="Snyk">
+    <meta name="twitter:title" property="og:title" content="{% if page.title %}{{page.title}}{% else %}Snyk{% endif %}">
     <meta name="twitter:description" property="og:description" content="{% if page.meta-description %}{{page.meta-description}}{% else %}So Now You Know{% endif %}">
     <link rel="stylesheet" href="/style/build/all.min.css">
     <!--[if lt IE 9]>
