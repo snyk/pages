@@ -109,12 +109,12 @@
   </div>
   {% if page.testimonials %}
   <div class="layout-stacked__section layout-container--raised">
-    <div class="layout-container--tight layout-container--short layout-container--raised">
+    <div class="layout-container layout-container--short layout-container--raised">
       {% for testimonial in page.testimonials %}
-      <div class="testimonial u--push-bottom-xl" style="display: block;">
-        <img class="testimonial__image" src="{{testimonial.image-url}}" alt="{{testimonial.image-caption}}" style="float: left; width: 7.5em; height: 7.5em;" />
-        <blockquote class="testimonial__text u--push-bottom-xl">
-          <p>&quot;{{testimonial.quote}}&quot;</p>
+      <div class="testimonial u--push-bottom-xxl">
+        <img class="testimonial__image" src="{{testimonial.image-url}}" alt="{{testimonial.image-caption}}" />
+        <blockquote class="testimonial__text">
+          <p>{{testimonial.quote}}</p>
           <cite>&ndash; {{testimonial.author}}, <strong>{{testimonial.company}}</strong></cite>
         </blockquote>
       </div>
