@@ -3,7 +3,7 @@
 title: Learn
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/q_100/v1466178587/features/features-learn_scaled.jpg
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1466178587/features/features-learn_scaled.jpg
 
 # Used as the alt text.
 image-caption: ""
