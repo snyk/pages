@@ -3,7 +3,7 @@
 title: Alert
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1466178585/features/features-alert_scaled.jpg
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839471/features/features-alert.png
 
 # Used as the alt text.
 image-caption: ""
