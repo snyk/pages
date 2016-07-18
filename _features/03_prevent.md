@@ -3,7 +3,7 @@
 title: Prevent
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/q_100/v1466178585/features/features-prevent_scaled.jpg
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839396/features/features-prevent.png
 
 # Used as the alt text.
 image-caption: ""
