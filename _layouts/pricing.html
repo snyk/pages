@@ -2,6 +2,21 @@
 
 {% include header.html %}
 
+<style type="text/css">
+
+@media (min-width: 50em) {
+  .u--alignleft--ms {
+    text-align: left!important;
+  }
+  .u--alignright--ms {
+    text-align: right!important;
+  }
+}
+
+
+
+</style>
+
 <!-- For JS browsers, disable the monthly class by default -->
 <script>
 document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}',0);
@@ -11,12 +26,40 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
 
 <div class="backdrop-positive">
 
-  <div class="layout-container u--centered u--push-bottom-xxl">
+  <div class="layout-container u--centered u--alignleft--ms u--push-bottom-xxl">
 
-  <h1 class="header__title">{{ page.title }}</h1>
+  <h1 class="header__title u--flat-bottom">{{ page.title }}</h1>
 
-    <p class="header__description__info">{{page.description}}</p>
-    <p><span class="u--highlight">{{page.description-highlight}}</span></p>
+  </div>
+
+</div>
+
+<div class="backdrop-bright">
+
+  <div class="layout-container--skinny u--push-bottom-xxl u--centered u--alignleft--ms layout-split layout-split--stretch">
+
+    <div class="layout-split__major">
+
+    <h2 class="u--push-bottom-xs">{{page.free-plan-title}}</h2>
+    <p class="u--flat-bottom">{{page.free-plan-description | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+    </div>
+
+    <div class="layout-split__minor">
+      <form method="get" action="/subscribe/FREE" class="u--push-right u--push-top-m">
+        <button class="button button--secondary"  id="get-free-account" type="submit">{{page.free-plan-call-to-action-text}}</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="backdrop-positive">
+
+  <div class="layout-container u--push-bottom-xxl u--centered u--alignleft--ms">
+
+    <h2 class="u--push-bottom-xs">{{page.premium-plan-title}}</h2>
+    <p class="u--flat-bottom">{{page.premium-plan-description | markdownify | remove: '<p>' | remove: '</p>'}}</p>
 
   </div>
 
@@ -24,14 +67,22 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
 
 <div class="layout-container u--centered">
 
-  <ul class="list list--horizontal js-only">
-    <li class="list__item js-toggle--annual"><strong>{{page.tab-annual-text}}</strong></li>
-    <li class="list__item js-toggle--monthly"><strong>{{page.tab-monthly-text}}</strong></li>
-  </ul>
+  <div class="layout-cols">
 
-  <span>{{page.pricing-explanation}}</span>
+    <div class="layout-cols__item">
+      <ul class="list list--horizontal js-only u--alignleft--ms u--push-bottom-s">
+        <li class="list__item js-toggle--annual"><strong>{{page.tab-annual-text}}</strong></li>
+        <li class="list__item js-toggle--monthly"><strong>{{page.tab-monthly-text}}</strong></li>
+      </ul>
+    </div>
 
-  <div class="cards layout-cols--noflex layout-cols--4 u--push-top-xxxl">
+    <div class="layout-cols__item u--alignright--ms">
+      {{page.pricing-explanation}}
+    </div>
+
+  </div>
+
+  <div class="cards layout-cols--noflex layout-cols--4 u--push-top-m">
 
     {% for plan in page.plans %}
     <div class="card card--plan layout-cols__item {% if plan.special %}card--plan--highlight{% endif %}">
@@ -82,28 +133,9 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
 
 </div>
 
+</div>
+
 <div class="backdrop-positive">
-
-  <div class="layout-container">
-
-    <div class="u--centered u--push-bottom-l">
-
-      <h2 class="h3">{{page.free-plan-title}}</h2>
-      <p>{{page.free-plan-description | markdownify}}</p>
-
-      <form method="get" action="/subscribe/FREE">
-        <button class="button button--secondary"  id="get-free-account" type="submit">{{page.free-plan-call-to-action-text}}</button>
-      </form>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-<div class="backdrop-positive layout-stacked__subsection">
 
   <div class="layout-container">
 
