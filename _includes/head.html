@@ -27,4 +27,5 @@
     <script src="/js/vendor/html5shiv.js"></script>
     <![endif]-->
   </head>
+  {% unless jekyll.environment == "production" %}<script src="https://cdn.optimizely.com/js/6865530867.js"></script>{% endunless %}
   <body class="section-{{page.layout}}">
