@@ -20,7 +20,8 @@
 <div class="backdrop-bright u--centered">
   <div class="layout-container layout-container--skinny">
     <h2 class="tiered-title u--flat-bottom u--push-top-s">{{page.cta-heading-text}}<br /><strong>{{page.cta-heading-emphasis}}</strong></h2>
-    <form id="add--mygithub" action="/add" method="get">
+    <form method="get" action="/auth/github" id="add--mygithub">
+      <input type="hidden" name="redirectUri" value="L2FkZD8=">
       <button id="add--mygithub__submit" type="submit" class="button button--primary u-button-margin-all">{{page.cta-button-text}}</button>
     </form>
     <div class="u--push-bottom-m"><a id="test-public-link" href="{{page.cta-link-url}}">{{page.cta-link-text}}</a></div>
