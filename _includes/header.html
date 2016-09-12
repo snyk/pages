@@ -13,7 +13,7 @@
     <nav id="nav-greedy" class="nav nav--header nav-greedy" aria-label="Global">
 
       <a href="/" class="site-logo" id="site-logo">
-        <span class="site-logo__symbol">Snyk</span>
+        <span class="site-logo__{% if page.layout == "homepage" %}wordmark{% else %}symbol{% endif %}">Snyk</span>
       </a>
 
       <ul class="nav__list nav-greedy__list" id="nav-greedy__list">
