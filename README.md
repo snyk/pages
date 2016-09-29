@@ -13,6 +13,8 @@ Most of the site is hosted on the Registry repo, but for pages that are mainly c
 
 ## Usage
 
+Check out the [Markdown-cheatsheet](https://github.com/Snyk/general/wiki/Markdown-cheatsheet) for how to write content.
+
 ## How to test
 
 ## Notes and caveats
