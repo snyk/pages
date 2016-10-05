@@ -29,51 +29,45 @@
 
 {% include header.html %}
 
-  <div class="layout-container {% if page.container == 'full' %}layout-container--full{% endif %}">
-
-    <article class="post {% if page.draft %}status--draft{% endif %}">
+  <div class="layout-container">
 
       <div class="layout-split">
 
         <div class="layout-split__major layout-split__major--push-bottom">
 
-          <div class="post__header">
-            <h1 class="post__title">{{ page.title }}</h1>
-          </div>
+          <h1>{{ page.title }}</h1>
 
-          <div class="post__content">
-            {{ content | markdownify }}
-          </div>
+          {{ content | markdownify }}
 
+          {% if page.cta1-button-text %}
           <div class="backdrop-glowing u--push-bottom-l">
             <aside class="layout-aside">
               <h3 class="layout-aside__text u--push-bottom-l">{{page.cta1-description}}</h3>
-              <p>
-                <a class="button button--secondary" data-snyk-track-on-click="CTA1 clicked - {{page.title}}" href="{{page.cta1-analytics-click-event}}">{{page.cta1-button-text}}</a>
-              </p>
+              <a class="button button--secondary" data-snyk-track-on-click="CTA1 clicked - {{page.title}}" href="{{page.cta1-analytics-click-event}}">{{page.cta1-button-text}}</a>
             </aside>
           </div>
+          {% endif %}
 
-        </div>
+        </div><!-- .layout-split__major -->
 
           <div class="layout-split__minor">
 
+            {% if page.cta2-button-text %}
             <div class="backdrop-glowing u--push-bottom-l">
               <aside class="layout-aside">
                 <h3 class="layout-aside__text u--push-bottom-l">{{page.cta2-description}}</h3>
-                <p>
-                  <a class="button button--secondary" data-snyk-track-on-click="{{page.cta2-analytics-click-event}}" href="{{page.cta2-button-link}}">{{page.cta2-button-text}}</a>
-                </p>
+                <a class="button button--secondary" data-snyk-track-on-click="{{page.cta2-analytics-click-event}}" href="{{page.cta2-button-link}}">{{page.cta2-button-text}}</a>
               </aside>
             </div>
+            {% endif %}
 
+            {% if page.sidebar-text %}
             {{ page.sidebar-text | markdownify }}
+            {% endif %}
 
-          </div>
+          </div><!-- .layout-split__minor -->
 
-        </div>
-
-    </article>
+        </div><!-- .layout-split -->
 
   </div>
 
