@@ -1,0 +1,93 @@
+---
+
+# Layout options: one-column, two-column
+layout: one-column
+
+title: "4 steps to address vulnerable dependencies"
+
+# These are used for social media cards, it is important they are filled out.
+meta-description: "Meta description"
+excerpt: "Description of what this page is, for social media cards"
+image: "/"
+
+# The call to action at the bottom of the page.
+cta1-description: "description"
+cta1-button-text: "button"
+cta1-button-link: "/"
+cta1-analytics-click-event: "CTA 1 clicked on Page title"
+
+# Content in second column. Optional for a two-column layout. Not used in one-column layout.
+cta2-description: "description"
+cta2-button-text: "button"
+cta2-button-link: "/"
+cta2-analytics-click-event: "CTA 1 clicked on Page title"
+
+# Content in second column. Optional for a two-column layout. Not used in one-column layout.
+sidebar-text: "Optional: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
+
+---
+
+Snyk's mission is to make it as easy as possible to address known vulnerabilities, and provide clear actions you need to take to get it done. We eventually got it down to 4 steps, which proved true across all environments, from npm to Maven to Infrastructure-as-Code tools such as Chef and Puppet.
+
+This post explains the steps, and how to implement them (for npm) using Snyk. Note that while the Snyk examples focus on testing applications using GitHub, these steps can also be done using the [Snyk CLI](https://snyk.io/docs/).
+
+## The steps
+Regardless of your tools or environment, here are the steps you need to take to address known vulnerabilities in your dependencies:
+
+1. *Find* the vulnerable dependencies
+2. *Fix* the vulnerabilities
+3. *Prevent* addition of new vulnerable packages
+4. *Respond* quickly and efficiently to newly disclosed vulnerabilities
+
+The first two steps help you get to a vulnerability-free state. Both are needed, as finding issues but not addressing them is not very helpful, but you can't fix issues you don't know about in the first place. Making _Fix_ easy is critical, as its all too tempting to disregard alerts that aren't easily actioned. Therefore, tools must not only support _Fix_, but make it easy to do.
+
+Once you're free of vulnerabilities, the next 2 steps help you stay that way as your code evolves and when new vulnerabilities are disclosed. Both your application and the public knowledge of vulnerabilities are constantly evolving, requiring a continuous solution to this problem.
+
+### 1) Find vulnerabilities in your GitHub repos
+The first step is to test all your projects for known vulnerabilities.
+
+At Snyk, we do this by giving you a single view to test all your repositories. 
+
+![Test your GitHub repos for vulnerable npm packages](http://res.cloudinary.com/snyk/image/upload/q_auto,f_auto,w_auto/v1474293733/Your_GitHub_repositories.png)
+
+For each repo using npm, Snyk will map the dependencies and correlate them with our open source [vulnerability database](https://snyk.io/vuln/). Vulnerabilities are classified into High/Medium/Low severity for easy prioritization, and you can click through to see detailed test reports.
+
+[Test your GitHub repos](https://snyk.io/add) (this requires logging in, and granting Snyk permissions on GitHub).
+
+
+### 2) Fix vulnerabilities
+For the projects that have vulnerable dependencies, the next step is to make them go away. While finding issues alone is useful for assessing your current risk, what you really want to do is fix the issues. Investing in tools that simplify fixing is key, since otherwise you'll quickly get desensitized to these errors and ignore them. The same effect happens with linting, performance testing and other quality tests.
+
+We found that a lot of people never get round to fixing vulnerabilities, which inspired us to build a feature that lets you open a pull request with the code changes needed to make vulnerabilities go away. After testing a repo, you can choose to open a PR with the fixes. 
+
+![Fix your issues with a fix PR](https://res.cloudinary.com/snyk/image/upload/v1474296317/Fix_PR_page.png)
+
+To fix issues, Snyk will first search for the minimal direct upgrade you can apply to get a non-vulnerable version of the package in question. If there is no such upgrade, Snyk will aim to patch the vulnerability using [open source patches from our vulnerability database](https://github.com/Snyk/vulndb/).
+
+### 3) Prevent adding vulnerable packages
+Security, like quality, is a continuous process. Once you're free of vulnerabilities, you need to make sure you don't add new vulnerable dependencies as your project evolves. And just like any other quality concern, the sooner you catch such a mistake, the easier and cheaper it would be to remediate it.
+
+Catching issues early means adding them to your continuous testing flow, which typically translates to either CI time tests or tests as part of a GitHub Pull Request.
+
+When you watch a GitHub project with Snyk, Snyk will also add its tests to your pull request verification steps. This means whenever a developer creates a PR, Snyk will test their changes and see if they made the application vulnerable. If so, the test would clearly fail and offer details on what can be done.
+
+![Flag vulnerable packages inside PRs](https://res.cloudinary.com/snyk/image/upload/v1474294875/Snyk_Test_in_PR.png)
+
+Adding tests to pull requests makes vulnerable packages highly visible without getting in the way (you can [configure when tests should fail](https://snyk.io/docs/github/#integration-features)). It's useful for team members to catch inadvertent mistakes early, and a good way for open source projects to ensure contributions don't include security mistakes. Pull request tests are (usually) not blocking, so you can still choose to merge a change with vulnerabilities if you're in a rush and have considered the consequences.
+
+### 4) Respond to new vulnerabilities
+This last step is where security diverges a bit from other quality concerns. In most cases, you only create new bugs when you modify your code. Known vulnerabilities, on the other hand, can show up even if your code hasn't changed at all.
+
+New vulnerabilities are disclosed regularly, uncovering previously unknown security holes in your application. These security flaws were in your application (and its dependencies) all along, but now that they are disclosed they are much more likely to be exploited by attackers. To stay secure, you need a setup that lets you quickly and efficiently learn about these new disclosures and fix them before attackers can exploit them.
+
+At Snyk, we again aim to simplify this response. When using the GitHub integration, Snyk would remember the dependencies your application uses, as well as track changes to your _package.json_ over time. When a new vulnerability is disclosed and added to our vulnerability database, Snyk will check if your project is impacted by it, and if so notify everybody in your Snyk organisation by email or via Slack. Alongside that, we will automatically submit a PR with suggested fixes, saving you another step.
+
+![Snyk Slack new vulnerability alert](https://res.cloudinary.com/snyk/image/upload/v1474298426/Slack-Vulnerability-Alert.png)
+
+## Protecting all your projects
+When running a test, it's tempting to only look at the projects that have vulnerable dependencies today. These projects are indeed the only ones that require the second step - Fix.
+
+However, keep in mind that the fact a project is not vulnerable today doesn't mean it won't be vulnerable tomorrow. Be sure to watch all of your projects so you can properly _Prevent_ and _Respond_ to new vulnerable dependencies as they occur.
+
+## Summary
+That's it. With these 4 steps, you'll be in good shape tackling vulnerable dependencies. For npm dependencies, Snyk should make it extremely easy to get them done. For other platforms, you can pick your tools of choice (when they exist), but make sure you tackle all four steps.
