@@ -3,7 +3,7 @@
 title: Find
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839484/features/features-find.png
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1478605096/home/your-github-repos.png
 
 # Used as the alt text.
 image-caption: ""
