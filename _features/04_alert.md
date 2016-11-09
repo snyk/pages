@@ -13,6 +13,6 @@ image-left: true
 ---
 
 * Get alerted when newly disclosed vulnerabilities affect your projects
-* Email notifications for new vulnerabilities and fixes
+* Email and Slack notifications for new vulnerabilities and fixes
 * Automatic GitHub pull requests to fix the new vulnerability
 * Comprehensive information and remediation guidance for vulnerabilities
