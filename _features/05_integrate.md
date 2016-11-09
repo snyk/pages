@@ -12,6 +12,6 @@ image-caption: ""
 image-left: false
 ---
 
-* Integrate your GitHub repositories to be monitored automatically
+* Watch your GitHub repositories automatically for security issues
 * Add Snyk to your Continuous Integration and Deployment process
 * Modify the Snyk policy to make the integration work for your team
