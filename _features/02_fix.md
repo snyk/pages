@@ -31,6 +31,6 @@ image-left: false
 ---
 
 * Upgrade or patch vulnerable dependencies
-* Use the interactive Snyk Wizard to apply fixes quickly
-* Get pull requests from Snyk with fixes for your GitHub repos
+* Get pull requests from Snyk with fixes for your Node.js and Ruby GitHub repos
 * Create pull requests with the fixes you want
+* Use the interactive Snyk wizard for Node.js to apply fixes quickly
