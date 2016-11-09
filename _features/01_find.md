@@ -3,7 +3,7 @@
 title: Find
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1478605096/home/your-github-repos.png
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839484/features/features-find.png
 
 # Used as the alt text.
 image-caption: ""
@@ -12,7 +12,7 @@ image-caption: ""
 image-left: false
 ---
 
-* Find vulnerabilities with Snyk CLI
-* Check all your GitHub repos for vulnerabilities
+* Find Node.js vulnerabilities with Snyk CLI
+* Check all your Node.js and Ruby GitHub repos for vulnerabilities
 * Scrutinise node.js packages before using them
 * All powered by Snyk’s own vulnerability database
