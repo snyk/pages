@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Language" content="en-us">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{page.title}}{% else %}Snyk{% endif %}</title>
-    <meta name="description" content="{% if page.meta-description %}{{page.meta-description}}{% else %}So Now You Know{% endif %}">
+    <title>{% if page.title %}{{page.title}} | Snyk{% else %}Snyk{% endif %}</title>
+    <meta name="description" content="{% if page.meta-description %}{{page.meta-description}}{% else %}Fix known vulnerabilities in your Node.js and Ruby apps: apply upgrades and security patches, prevent adding vulnerable dependencies, and get alerted about new security issues.{% endif %}">
     {% unless jekyll.environment == "production" %}<base href="https://snyk.io/">{% endunless %}
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/snyk/image/upload/v1468845142/favicon/favicon.png" sizes="194x194">
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/snyk/image/upload/v1468845142/favicon/android-chrome.png" sizes="192x192">
@@ -20,8 +20,8 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" property="og:image" content="https://res.cloudinary.com/snyk/image/upload/v1468845142/logo/snyk-avatar.png">
     <meta name="twitter:site" content="@snyksec">
-    <meta name="twitter:title" property="og:title" content="{% if page.title %}{{page.title}}{% else %}Snyk{% endif %}">
-    <meta name="twitter:description" property="og:description" content="{% if page.meta-description %}{{page.meta-description}}{% else %}So Now You Know{% endif %}">
+    <meta name="twitter:title" property="og:title" content="{% if page.title %}Snyk - {{page.title}}{% else %}Snyk{% endif %}">
+    <meta name="twitter:description" property="og:description" content="{% if page.meta-description %}{{page.meta-description}}{% else %}Fix known vulnerabilities in your Node.js and Ruby apps: apply upgrades and security patches, prevent adding vulnerable dependencies, and get alerted about new security issues.{% endif %}">
     <link rel="stylesheet" href="/style/build/all.min.css">
     <!--[if lt IE 9]>
     <script src="/js/vendor/html5shiv.js"></script>
