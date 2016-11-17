@@ -13,7 +13,7 @@ By using the Services or installing our CLI tool, you are confirming that you ac
 
 These Terms of Service refer to the following additional terms, which also apply to your use of the Services:
 
-* Our Privacy Policy at [https://snyk.io/policies#privacy-policy](https://snyk.io/policies#privacy-policy), which sets out the terms on which we process any personal data we collect from you, or that you provide to us.
+* Our Privacy Policy at [https://snyk.io/policies#privacy](https://snyk.io/policies#privacy), which sets out the terms on which we process any personal data we collect from you, or that you provide to us.
 * Our Acceptable Use Policy at [https://snyk.io/policies#acceptable-use-policy](https://snyk.io/policies#acceptable-use-policy), which sets out the permitted uses and prohibited uses of our Services, including any material and data transmitted using the Services.
 * Our Cookie Policy [https://snyk.io/policies#cookie-policy](https://snyk.io/policies#cookie-policy), which sets out information about the cookies on the Platform.
 
