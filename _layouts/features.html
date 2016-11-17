@@ -6,8 +6,9 @@
   <div class="layout-container u--centered">
     <h1 class="header__title">{{page.title}}</h1>
     <p class="header__description__info">{{page.top-description}}</p>
-    <form method="get" action="/auth/github">
-      <button id="get-free-account" class="button">{{page.top-button-text}}</button>
+    <form method="get" action="/signup">
+      <a href="/auth/github?redirectUri=L2FkZA==" id="cta-add-github-repos" class="button button--primary u-button-margin-all"><span class="icon-type--github--inverse -md"></span> {{page.github-cta-text}}</a>
+      <a href="/auth/bitbucket" id="cta-auth-bitbucket" class="button button--primary u-button-margin-all"><span class="icon-type--bitbucket--inverse -md"></span> {{page.bitbucket-cta-text}}</a>
     </form>
   </div>
 </div>
