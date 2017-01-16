@@ -7,18 +7,19 @@
 <style>
 
 @media only screen and (min-width: 50em) {
-  .layout-fluid.layout-fluid--4col {
+  .layout-fluid.layout-fluid--3col {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
   }
 
-  .layout-fluid.layout-fluid--4col .layout-fluid__item {
+  .layout-fluid.layout-fluid--3col .layout-fluid__item {
+    width: 32%;
     max-width: 32%;
     margin-right: 2%;
   }
 
-  .layout-fluid.layout-fluid--4col .layout-fluid__item:nth-child(3n+3) {
+  .layout-fluid.layout-fluid--3col .layout-fluid__item:nth-child(3n+3) {
     margin-right: 0;
   }
 
@@ -83,7 +84,7 @@
 
     <h2 class="h3 u--push-bottom-l">{{page.heading}}</h2>
 
-    <div class="layout-fluid layout-fluid--4col">
+    <div class="layout-fluid layout-fluid--3col">
     {% for partner in page.partners %}
       <div class="layout-fluid__item">
         <div class="teaser teaser--mini">
