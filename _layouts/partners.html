@@ -1,0 +1,111 @@
+{% include head.html %}
+
+{% include header.html %}
+
+<link rel="stylesheet" href="/style/build/main.min.css?c4469be4aa9a568fae7e98722e2e95de"><script> </script><!-- Why this is here: https://jakearchibald.com/2016/link-in-body/ -->
+
+<style>
+
+@media only screen and (min-width: 50em) {
+  .layout-fluid.layout-fluid--3col {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .layout-fluid.layout-fluid--3col .layout-fluid__item {
+    width: 32%;
+    max-width: 32%;
+    margin-right: 2%;
+  }
+
+  .layout-fluid.layout-fluid--3col .layout-fluid__item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .teaser--mini {
+    flex-wrap: wrap;
+  }
+
+  .teaser--mini .teaser__image {
+    width: 100%;
+    height: 6em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+
+  .teaser--mini .teaser__image img {
+    max-height: 100%;
+  }
+
+  .teaser--mini .teaser__content {
+    width: 100%;
+  }
+
+  .teaser--mini .teaser__text {
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+}
+
+</style>
+
+<div class="layout-container">
+
+  <header class="header">
+    <h1 class="header__title u--flat-bottom">{{page.title}}</h1>
+  </header>
+
+  <div class="layout-split">
+
+    <div class="layout-split__major">
+      <p class="header__description__text">{{page.intro}}</p>
+      {{content | markdownify}}
+    </div>
+
+    <div class="layout-split__minor">
+      <aside class="layout-aside">
+        <h2 class="layout-aside__heading">{{page.contact-heading}}</h2>
+        <p class="layout-aside__text">{{page.contact-text}}</p>
+        <p class="layout-aside__text"><a href="mailto:{{page.contact-email-address}}?subject={{page.contact-email-subject}}&body={{page.contact-email-body}}">{{page.contact-cta-text}}</a></p>
+      </aside>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="layout-stacked__division backdrop-positive">
+
+  <div class="layout-container">
+
+    <h2 class="h3 u--push-bottom-l">{{page.heading}}</h2>
+
+    <div class="layout-fluid layout-fluid--3col">
+    {% for partner in page.partners %}
+      <div class="layout-fluid__item">
+        <div class="teaser teaser--mini">
+          <div class="teaser__content">
+            <h2 class="teaser__title hidden">{{partner.partner}}</h2>
+            <p class="teaser__text">{{partner.text}}</p>
+          </div>
+          <div class="teaser__image">
+            <img alt="{{partner.partner}} logo" src="{{partner.logo}}" />
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+{% include footer.html %}
+
+{% include foot-scripts.html %}
+
+{% include foot.html %}
