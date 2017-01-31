@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="/style/build/main.min.css?c4469be4aa9a568fae7e98722e2e95de"><script> </script><!-- Why this is here: https://jakearchibald.com/2016/link-in-body/ -->
 
-{% comment %}begin temparary cli auth notice (added 2017-01-24){% endcomment %}
+{% comment %}begin temporary cli auth notice (added 2017-01-24){% endcomment %}
 <div class="alert alert--notice">
  <div class="layout-container layout-container--short" role="alert">
    <p class="alert__text"><strong>Having problems with the CLI?</strong> We recently started requiring authentication. For more information, see <a href="https://snyk.io/docs/using-snyk#troubleshooting">CLI troubleshooting</a>.</p>
@@ -13,7 +13,7 @@
    </span>
  </div>
 </div>
-{% comment %}end temparary cli auth notice{% endcomment %}
+{% comment %}end temporary cli auth notice{% endcomment %}
 
 <div class="backdrop-dark">
   <div class="layout-container">
@@ -32,10 +32,8 @@
 
 <div class="backdrop-bright u--centered">
   <div class="layout-container layout-container--short">
-    <form method="get" action="/signup">
-      <a href="/auth/github?redirectUri=L2FkZA==" id="cta-add-github-repos" class="button button--primary u-button-margin-all"><span class="icon-type--github--inverse -md"></span> {{page.github-cta-text}}</a>
-      <a href="/auth/bitbucket" id="cta-auth-bitbucket" class="button button--primary u-button-margin-all"><span class="icon-type--bitbucket--inverse -md"></span> {{page.bitbucket-cta-text}}</a>
-    </form>
+    <a href="/auth/github?redirectUri=L2FkZA==" id="cta-add-github-repos" class="button button--primary u-button-margin-all"><span class="icon-type--github--inverse -md"></span> {{page.github-cta-text}}</a>
+    <a href="/signup" id="cta-signup" class="button button--primary u-button-margin-all"> Sign up for a free account</a>
   </div>
 </div>
 
