@@ -9,7 +9,7 @@ This policy (together with our Terms of Service https://snyk.io/policies/ and an
 
 By visiting our website https://snyk.io or installing our CLI tool (together, the “Platform”) you are accepting and consenting to the practices described in this policy.
 
-For the purpose of the relevant data protection legislation, the data controller is Snyk Limited of 87 Lavender Sweep, London, SW11 1EA, UK (“Snyk”, “us”, “our” or “we”). Our ICO Registration Number is: [INSERT – YOU WILL ALSO NEED TO REGISTER].
+For the purpose of the relevant data protection legislation, the data controller is Snyk Limited of 87 Lavender Sweep, London, SW11 1EA, UK (“Snyk”, “us”, “our” or “we”). Our ICO Registration Number is: ZA232876.
 
 Please note that this policy does not apply to, or limit, our use or disclosure of non-personal information (i.e. information which is not relevant to you or able to identify you) we may collect from you via your use of the Platform.
 
