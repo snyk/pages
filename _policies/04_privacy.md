@@ -5,7 +5,7 @@ date-modified: 23rd June 2016
 
 **Please read this policy carefully before using our website.**
 
-This policy (together with our Terms of Service https://snyk.io/policies/ and any other documents referred to in it) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. Please read the following carefully to understand the types of information we collect from you, how we use that information and the circumstances under which we will share it with third parties.
+This policy (together with our Terms of Service https://snyk.io/policies/ or any other SAAS agreement that we have entered into with you, and any other documents referred to in them) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. Please read the following carefully to understand the types of information we collect from you, how we use that information and the circumstances under which we will share it with third parties.
 
 By visiting our website https://snyk.io or installing our CLI tool (together, the “Platform”) you are accepting and consenting to the practices described in this policy.
 
