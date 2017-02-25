@@ -3,7 +3,9 @@ title: Terms of Services
 date-modified: 23rd June 2016
 ---
 
-These Terms of Service (together with the documents referred to in it) tell you the terms on which you may make use of the services which are made available to you via our software platform at https://snyk.io and our CLI tool (together, the “Platform”) (the “Services”), as well as all information and data made available to you in connection with the Services (“Service Data”).
+Unless you have entered into a separate SAAS agreement with us, these Terms of Service (together with the documents referred to in it) tell you the terms on which you may make use of the services which are made available to you via our software platform at https://snyk.io and our CLI tool (together, the “Platform”) (the “Services”), as well as all information and data made available to you in connection with the Services (“Service Data”).
+
+If you have entered into a separate SAAS agreement with us for your and your employees, contractors and agents use of the Services, then that agreement will apply instead of these Terms of Service.
 
 Please read these Terms of Service carefully before you start to use the Services. We recommend that you print a copy of this for future reference.
 
@@ -42,6 +44,8 @@ We grant you a non-exclusive, non-transferable, revocable right to install and m
 You acknowledge that all intellectual property rights in the Services, the Documentation, the Service Data and the Platform anywhere in the world belong to us or our licensors (even after installation onto a computer owned by you or integration into your system), and that you have no rights in or to the Services, Documentation, Service Data or the Platform other than the right to use each of them in accordance with the terms of these Terms of Service.
 
 ### 5. Services
+
+From time to time, we may introduce new services, features or functionality to the Services. These Terms of Service will apply to such new services, features or functionality, unless they come with separate or additional terms, in which case you will be required to agree to such separate or additional terms before being permitted to use the new services, features or functionality. 
 
 We undertake that the Services will be performed substantially in accordance with the Documentation and with reasonable skill and care. This undertaking shall not apply to the extent of any non-conformance which is caused by your use of the Services contrary to our instructions or these Terms of Service, or any alternation or modification made to the Services or the software used in the provision of the Services by a third party who is not authorised by us. You understand and agree that we have no obligation to modify software to support your use of the Services.
 
