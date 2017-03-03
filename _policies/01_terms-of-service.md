@@ -51,7 +51,7 @@ We undertake that the Services will be performed substantially in accordance wit
 
 We do not warrant that:
 
-* the Services will be able to find and monitor all vulnerabilities in all dependencies included or used by your application. Whilst we endeavour to keep up to date and build on our open source vulnerability database, you acknowledge that we do not guarantee it is a complete source of all vulnerabilities for all dependencies, nor that is it relevant or suited to all the dependencies included or used by your applications;
+* the Services will be able to find and monitor all vulnerabilities in all dependencies (including open source dependencies) included or used by your application. Whilst we endeavour to keep up to date and build on our open source vulnerability database, you acknowledge that it does not provide any legal or other professional advice in relation to the Services and that we do not guarantee it is a complete source of all vulnerabilities and license issues for all dependencies or that it is relevant or suited to all the dependencies included or used by your applications;
 * we will be able to fix all vulnerabilities discovered using the Services; or
 * a patch will not break the functionality of your code or will not result in the introduction of new vulnerabilities. We take care when authoring patches and test all patches before making them available to you as part of the Services; however, you acknowledge that it is your responsibility to assess the impact of patch before using it.
 
