@@ -2,5 +2,4 @@
 # Question title. Plaintext only.
 question: "What’s a project?"
 ---
-
-A project can be a public or private GitHub repository, or a local node project tested via the CLI, that you are monitoring with Snyk. We’ll track each project for vulnerabilities, and alert you when there’s a security risk, as well as when a new upgrade or patches to secure your project are available.
+A project can be a public or private GitHub repository, or a local folder tested via the CLI, that you are monitoring with Snyk. We’ll track the open source dependencies of each project, and alert you when new vulnerabilities are discovered, as well as when new upgrades or patches to fix existing vulnerabilities become available.
