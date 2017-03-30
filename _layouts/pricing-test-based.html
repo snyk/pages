@@ -117,7 +117,7 @@ document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}'
     <h2>FAQs</h2>
     <div class="layout-binary">
 
-      {% for faq in site.faqs %}
+      {% for faq in site.faqs-test-based %}
         <div class="layout-binary__item">
           <h3 class="h5">{{ faq.question }}</h3>
           {{faq.content | markdownify}}
