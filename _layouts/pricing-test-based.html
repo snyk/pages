@@ -1,0 +1,150 @@
+{% include head.html %}
+
+{% include header.html %}
+
+<style type="text/css">
+
+@media (min-width: 50em) {
+  .u--alignleft--ms {
+    text-align: left!important;
+  }
+  .u--alignright--ms {
+    text-align: right!important;
+  }
+}
+
+
+
+</style>
+
+<!-- For JS browsers, disable the monthly class by default -->
+<script>
+document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:none}',0);
+</script>
+
+<main class="layout-stacked">
+
+<div class="backdrop-positive">
+
+  <div class="layout-container u--centered u--alignleft--ms u--push-bottom-xxl">
+
+  <h1 class="header__title u--flat-bottom">{{ page.title }}</h1>
+
+  <p class="lede">{{ page.lede }}</p>
+
+  </div>
+
+</div>
+
+<div class="layout-container u--centered">
+
+  <div class="layout-cols">
+
+    <div class="layout-cols__item">
+      <ul class="list list--horizontal js-only u--alignleft--ms u--push-bottom-s">
+        <li class="list__item js-toggle--annual"><strong>{{page.tab-annual-text}}</strong></li>
+        <li class="list__item js-toggle--monthly"><strong>{{page.tab-monthly-text}}</strong></li>
+      </ul>
+    </div>
+
+    <div class="layout-cols__item u--alignright--ms">
+      {{page.pricing-explanation}}
+    </div>
+
+  </div>
+
+  <div class="cards layout-cols--noflex layout-cols--3 u--push-top-m">
+
+    {% for plan in page.plans %}
+    <div class="card card--plan layout-cols__item {% if plan.special %}card--plan--highlight{% endif %}">
+
+      <div class="card__header">
+        {% if plan.special %}<p class="card__info">{{plan.special-text}}</p>{% endif %}
+        <h2 class="card__title">{{plan.name}}</h2>
+      </div>
+
+      {% if plan.custom %}
+
+      <p class="card__subtitle"><span class="card__subtitle__lone">Custom</span></p>
+      <a href="mailto:{{page.custom-plan-contact}}" class="button button--tertiary u-button-margin-bottom u-card__button--tertiary">Contact us</a>
+
+      {% else %}
+
+      <span class="js-toggle__content--annual">
+        <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-annual}}</strong>/month
+          {% if plan.price-payg %}<br/>{{plan.price-payg}}{% endif %}
+        </p>
+        <form method="get" action="/subscribe/{{plan.annual-id}}">
+          <button class="button button--tertiary u-button-margin-bottom u-card__button--tertiary button-trial plan-button" type="submit" data-purchase="{{plan.call-to-purchase-text}}" data-plan-name="{{plan.name}}">
+            {{plan.call-to-action-text}}
+          </button>
+        </form>
+      </span>
+      <span class="js-toggle__content--monthly">
+        <p class="card__subtitle"><strong class="card__subtitle__prominent">${{plan.price-monthly}}</strong>/month
+          {% if plan.price-payg %}<br/>{{plan.price-payg}}{% endif %}
+        </p>
+        <form method="get" action="/subscribe/{{plan.monthly-id}}">
+          <button class="button button--tertiary u-button-margin-bottom u-card__button--tertiary button-trial plan-button" type="submit" data-purchase="{{plan.call-to-purchase-text}}" data-plan-name="{{plan.name}}">
+            {{plan.call-to-action-text}}
+          </button>
+        </form>
+      </span>
+
+      {% endif %}
+
+      <div class="card__body">
+        <ul class="card__list">
+          {% for entitlement in plan.entitlements %}
+          <li class="card__list__item">{{entitlement | markdownify | remove: '<p>' | remove: '</p>'}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+
+</div>
+
+<div class="backdrop-positive">
+
+  <div class="layout-container">
+
+    <h2>FAQs</h2>
+    <div class="layout-binary">
+
+      {% for faq in site.faqs %}
+        <div class="layout-binary__item">
+          <h3 class="h5">{{ faq.question }}</h3>
+          {{faq.content | markdownify}}
+        </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+
+{% include footer.html %}
+
+{% include foot-scripts.html %}
+
+<script>
+document.styleSheets[0].insertRule('.js-toggle__content--monthly {display:block}',0);
+var purchaseSearch = window.location.search.match(/purchase=(.*)&?/);
+if (purchaseSearch && purchaseSearch[1] === 'true') {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.button-trial'));
+  links.forEach(function (link) {
+    link.textContent = link.dataset.purchase;
+  });
+}
+</script>
+
+{% include foot.html %}
