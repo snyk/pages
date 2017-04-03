@@ -18,3 +18,5 @@ Check out the [Markdown-cheatsheet](https://github.com/Snyk/general/wiki/Markdow
 ## How to test
 
 ## Notes and caveats
+
+In order to pull in updated assets from `@snyk/snyk-ui`, run `npm install` and commit the changed assets.
