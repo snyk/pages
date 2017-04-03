@@ -1,0 +1,22 @@
+{
+  "name": "pages",
+  "version": "1.0.0",
+  "description": "Logged out pages on the website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cp -R node_modules/@snyk/snyk-ui/build/assets/* assets/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snyk/pages.git"
+  },
+  "private": true,
+  "author": "Snyk",
+  "bugs": {
+    "url": "https://github.com/snyk/pages/issues"
+  },
+  "homepage": "https://github.com/snyk/pages#readme",
+  "devDependencies": {
+    "@snyk/snyk-ui": "^1.36.0"
+  }
+}
