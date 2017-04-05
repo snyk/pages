@@ -61,7 +61,7 @@ We will not be liable to you for our failure to find, fix and monitor dependenci
 
 ### 6. Accessing the Services
 
-You acknowledge that the extent of your use of the Services will depend on your subscription plan, and you further agree to only use the Services within the limits of such subscription plan. The default subscription plan is the ‘Free Plan’. Details about the Services available under each subscription plan can be found here: [https://snyk.io/pricing](https://snyk.io/pricing). If, at any time whilst using the Services, you exceed the limit of your subscription plan, we will charge you, and you will pay, the relevant fees which apply to such excess use as set out above. We will use our reasonable endeavours to notify you when the limit is close to being exceeded; however, we accept no liability for failure to do this. You are solely responsible for monitoring your use of the Services within the permitted limits.
+You acknowledge that the extent of your use of the Services will depend on your subscription plan, and you further agree to only use the Services within the limits of such subscription plan. The default subscription plan is the ‘Free Plan’. Details about the Services available under each subscription plan can be found here: [https://snyk.io/plans](https://snyk.io/plans). If, at any time whilst using the Services, you exceed the limit of your subscription plan, we will charge you, and you will pay, the relevant fees which apply to such excess use as set out above. We will use our reasonable endeavours to notify you when the limit is close to being exceeded; however, we accept no liability for failure to do this. You are solely responsible for monitoring your use of the Services within the permitted limits.
 
 Whilst we will make reasonable efforts to ensure the Services are operational 24 hours a day, 7 days a week, we do not guarantee that the Services will always be available or be uninterrupted. In particular, but without limitation:
 
@@ -78,7 +78,7 @@ A breach of the Acceptable Use Policy will constitute a breach of these Terms of
 
 ### 8. Purchases
 
-If you choose a paid-subscription plan, you agree to pay us fees in accordance with the relevant pricing plan. Details of those fees are set out on our Pricing Page at [https://snyk.io/pricing](https://snyk.io/pricing) (which do not include VAT).
+If you choose a paid-subscription plan, you agree to pay us fees in accordance with the relevant pricing plan. Details of those fees are set out on our Pricing Page at [https://snyk.io/plans](https://snyk.io/plans) (which do not include VAT).
 
 Depending on the pricing plan chosen by you, our third party payment processor will (and you hereby authorise it to) bill your payment card for the applicable fee in advance on or shortly after the date you subscribe for a paid plan and each month or anniversary thereafter, until terminated by you or us. The fees are non-refundable, except as expressly stated otherwise in these Terms of Service.
 
