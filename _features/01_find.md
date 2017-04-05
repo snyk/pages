@@ -3,10 +3,10 @@
 title: Find
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839484/features/features-find.png
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_800/v1491410285/home/projects.png
 
 # Used as the alt text.
-image-caption: ""
+image-caption: "A screenshot of the Snyk website showing test reports alongside each project"
 
 # Set to true if you want the image on the left.
 image-left: false
