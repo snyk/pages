@@ -3,7 +3,7 @@
 title: infoShare
 
 # Event Location
-location: Gdansk, PL
+location: Gdansk, Poland
 
 # Event URL
 external-url: https://www.meetup.com/Serverless-London/
