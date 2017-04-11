@@ -1,0 +1,65 @@
+{% include head.html %}
+
+{% include header.html %}
+
+<div class="backdrop-alternate">
+  <div class="layout-container u--centered">
+    <h1 class="header__title">{{page.title}}</h1>
+    <p class="header__description__info">{{page.top-description}}</p>
+  </div>
+</div>
+
+{% for event in site.events %}
+<div class="backdrop-alternate">
+	<div class="layout-container">
+	  	<div class="layout-cols">
+		  <div class="layout-cols__item layout-cols__item--major">
+	  	{% if event.end-date %}
+
+		  	<p class="header__label label label--outline"><strong>{{event.start-date | date: "%B %-d"}} - {{event.end-date | date: "%B %-d %Y"}}</strong></p>
+		  	{%else %}
+		  	<p class="header__label label label--outline"><strong>{{event.start-date | date: "%B %-d %Y"}}</strong></p>
+		  	{% endif %}
+		  	<h2 class="u--flat-bottom">{{event.title}}</h2>
+		  	<p class="h6 h--lightest">{{event.location}}</p>
+	  		<p>{{event.content | markdownify}}</p>
+	  		<p><a class="link--cta" href="{{event.external-url}}">{{event.cta-text}}</a></p>
+
+	  		{% if event.talks %}
+	  		<h3>Presentations by folks from Snyk:</h3>
+	  		<ul>
+	  		{% for talk in event.talks %}
+		  		<li>"{{talk.topic}}" presented by <a href="/about/#{{ talk.presenter | slugify }}">{{talk.presenter}}</a></li>           
+	        {% endfor %}
+	        </ul>
+	        {% endif %}
+	        <div class="alert alert--notice">
+			 <div class="layout-container layout-container--short" role="alert">
+			   <p class="alert__text"><strong>Going to be around?</strong> Let us know if you would <a href="mailto:contact@snyk.io?subject={{event.title}}">like to meet up!</a></p>
+			 </div>
+			</div>
+		  	</div>
+		  	{% if event.image %}
+		  	<div class="layout-cols__item layout-cols--centered">
+				<img src="{{event.image}}" alt="{{event.title}}" class="u--centered">
+		  	</div>
+		  	{% endif %}
+	  	</div>
+	  </div>
+</div>
+
+{% endfor %}
+
+<div class="backdrop-alternate layout-stacked__content layout-stacked__content--secondary u--flat-bottom">
+  <div class="layout-container u--centered">
+    <p class="header__description__info">{{page.bottom-description}}</p>
+    <form id="add--mygithub" action="/add" method="get" class="u--push-bottom-xl">
+      <button class="button" id="add--mygithub__submit" type="submit">{{page.bottom-button-text}}</button>
+    </form>
+  </div>
+</div>
+
+{% include footer.html %}
+
+{% include foot-scripts.html %}
+{% include foot.html %}
