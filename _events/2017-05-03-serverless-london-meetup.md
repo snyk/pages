@@ -6,7 +6,7 @@ title: London Serverless Meetup
 location: London, UK
 
 # Event URL
-external-url: https://austin.serverlessconf.io/
+external-url: https://www.meetup.com/Serverless-London/events/238992509/
 
 # Date(s)
 start-date: 2017-05-03
