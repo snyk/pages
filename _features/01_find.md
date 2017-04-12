@@ -13,6 +13,6 @@ image-left: false
 ---
 
 * Find Node.js vulnerabilities with Snyk CLI
-* Check all your Node.js and Ruby GitHub repos for vulnerabilities
+* Check all your Node.js, Ruby and Java GitHub repos for vulnerabilities
 * Scrutinise node.js packages before using them
 * All powered by Snyk’s own vulnerability database
