@@ -10,8 +10,7 @@
       </div>
       <div class="hero__content">
         <h1 class="u--push-top-m u--push-bottom-xs">{{page.hero-title}}</h1>
-        {% if page.hero-subtitle %}<h2 class="tiered-title text--complement u--push-bottom-l" style="font-weight: normal;">{{page.hero-subtitle}}</h2>{% endif %}
-        <a class="button button--secondary u--push-bottom-xl" href="/signup">{{page.signup-cta-text}}</a>
+        {% if page.hero-subtitle %}<h2 class="tiered-title text--complement u--push-bottom-xl" style="font-weight: normal;">{{page.hero-subtitle}}</h2>{% endif %}
       </div>
     </div>
   </div>
@@ -19,13 +18,13 @@
 
 
 <div class="backdrop-positive">
-  <div class="layout-container">
+  <div class="layout-container layout-container--skinny">
     <div class="layout-cols layout-cols--ordered">
-      <div class="layout-cols__item layout-cols__item--first">
+      <div class="layout-cols__item layout-cols__item--flat layout-cols__item--first">
         <h3>{{page.sourcecode-title}}</h3>
         <p>{{page.sourcecode-subtitle}}</p>
-        <p><a href="/auth/github?redirectUri=L2FkZA==" class="button button--secondary u--push-bottom-l"><span class="icon-type--github--inverse -md"></span> {{page.github-cta-text}}</a></p>
-        <ul class="logos logos--grayscale">
+        <p><a href="/auth/github?redirectUri=L2FkZA==" class="button button--secondary"><span class="icon-type--github--inverse -sm"></span> {{page.github-cta-text}}</a></p>
+        <ul class="logos logos--platforms">
         {% for logo in page.sourcecode-logos %}
           <li class="logos__item">
             <img class="logos__item__image" src="{{logo.src}}" alt="{{logo.alt}}" />
@@ -33,11 +32,11 @@
         {% endfor %}
         </ul>
       </div>
-      <div class="layout-cols__item">
+      <div class="layout-cols__item layout-cols__item--flat">
         <h3>{{page.serverless-title}}</h3>
         <p>{{page.serverless-subtitle}}</p>
         <p><a href="/signup" class="button button--secondary">{{page.signup-cta-text}}</a></p>
-        <ul class="logos logos--grayscale">
+        <ul class="logos logos--platforms">
         {% for logo in page.serverless-logos %}
           <li class="logos__item">
             <img class="logos__item__image" src="{{logo.src}}" alt="{{logo.alt}}" />
@@ -50,10 +49,10 @@
 </div>
 
 
-<div class="layout-stacked__section">
-  <div class="layout-container layout-container--short">
+<div class="backdrop-neutral">
+  <div class="layout-container layout-container--skinny">
     <div class="layout-cols layout-cols--ordered">
-      <div class="layout-cols__item layout-cols__item--first">
+      <div class="layout-cols__item layout-cols__item--flat layout-cols__item--first">
         <h3>{{page.lead-title}}</h3>
         <p class="byline">
           {{page.lead-subtitle}}
@@ -65,7 +64,7 @@
         </ul>
         <p><a href="{{page.lead-link-url}}">{{page.lead-link-text}}</a></p>
       </div>
-      <div class="layout-cols__item">
+      <div class="layout-cols__item layout-cols__item--flat">
         <img src="{{page.lead-image.src}}" alt="{{page.lead-image.alt}}" />
       </div>
     </div>
@@ -83,8 +82,8 @@
 
 <div class="backdrop-positive">
   <div class="layout-container layout-container--centered layout-container--skinny">
-    <p class="u--push-bottom-xs">{{page.teams-title}}</p>
-    <ul class="logos logos--grayscale">
+    <p class="u--push-bottom-m">{{page.teams-title}}</p>
+    <ul class="logos">
     {% for logo in page.teams-logos %}
       <li class="logos__item">
         <img class="logos__item__image" src="{{logo.src}}" alt="{{logo.alt}}" />
@@ -93,7 +92,7 @@
     </ul>
     <hr/>
     <div class="testimonial">
-      <img class="testimonial__image" src="{{testimonial-image.src}}" alt="{{testimonial-image.alt}}"/>
+      <img class="testimonial__image" src="{{page.testimonial-image.src}}" alt="{{page.testimonial-image.alt}}"/>
       <blockquote class="testimonial__text u--push-bottom-xl">
         <p>{{page.testimonial-quote}}</p>
         <cite>&ndash; {{page.testimonial-author}}, <strong>{{page.testimonial-company}}</strong></cite>
