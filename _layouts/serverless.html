@@ -1,0 +1,109 @@
+{% include head.html %}
+
+{% include header.html %}
+
+<link rel="stylesheet" href="/style/build/main.min.css?c4469be4aa9a568fae7e98722e2e95de"><script> </script><!-- Why this is here: https://jakearchibald.com/2016/link-in-body/ -->
+
+<div class="backdrop-dark">
+  <div class="layout-container">
+    <div class="hero">
+      <div class="hero__image">
+        <img src="{{page.main-image}}" alt="{{page.main-image-caption}}" style="width: 7em;">
+      </div>
+      <div class="hero__content">
+        <h1 class="u--push-top-s u--push-bottom-xs">{{page.main-title}}</h1>
+        {% if page.subtitle %} <h2 class="tiered-title text--complement" style="font-weight: normal;">{{page.subtitle}}{% endif %}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="backdrop-bright u--centered">
+  <div class="layout-container layout-container--short">
+    <a href="/integrations/aws-lambda" id="cta-add-github-repos" class="button button--primary u-button-margin-all"><span class="-md"></span> {{page.aws-cta-text}}</a>
+    <a href="/integrations/heroku" id="cta-signup" class="button button--primary u-button-margin-all">{{page.heruko-cta-text}}</a>
+  </div>
+</div>
+
+
+<div class="backdrop-positive">
+  <div class="layout-container layout-container--centered layout-container--skinny">
+    <p class="u--push-bottom-m">{{page.teams-title}}</p>
+    <ul class="logos logos--grayscale">
+      {% for logos in page.logos %}
+      <li class="logos__item">
+        <img class="logos__item__image" src="{{logos.url}}" alt="{{logos.company}}" />
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+<div class="layout-stacked__section">
+  <div class="layout-container layout-container--short">
+    <div class="layout-cols layout-cols--ordered">
+      <div class="layout-cols__item">
+        <h2 class="secondary-title">{{page.lead-section-title}}</h2>
+        <p class="byline">
+          {{page.lead-section-subtitle}}
+        </p>
+        <a href="/auth/github?redirectUri=L2FkZA==" class="button button--secondary u-button-margin-bottom" id="cta-test-gh-repos">{{page.lead-section-cta-button-text}}</a>
+      </div>
+      <div class="layout-cols__item layout-cols__item--first">
+        <img class="u--push-bottom-l" src="{{page.lead-section-image}}" alt="{{page.lead-section-image-caption}}" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="backdrop-bright u--centered">
+  <div class="layout-container layout-container--skinny">
+    <h2 class="tiered-title u--flat-bottom">
+      {{page.vulndb-intro}}
+    </h2>
+  </div>
+</div>
+
+
+<div class="backdrop-positive">
+  <div class="layout-container">
+    <h3 class=" u--push-top-s">Snyk secures your applications</h3>
+    <div class="u--push-top-l">
+      <ol class="list--numbered layout-binary list--l">
+        {% for step in page.steps %}
+        <li>{{step.step}}</li>
+        {% endfor %}
+      </ol>
+    </div>
+    <p class="byline u--centered u--flat-bottom"><a href="{{page.steps-link-url}}" id="cta-features-link">{{page.steps-link-text}}</a></p>
+  </div>
+</div>
+
+
+<div class="layout-stacked__section">
+  {% if page.testimonials %}
+  <div class=" layout-container--raised">
+    <div class="layout-container layout-container--short layout-container--raised">
+      {% for testimonial in page.testimonials %}
+      <div class="testimonial">
+        <img class="testimonial__image" src="https://res.cloudinary.com/snyk/image/upload/c_thumb,g_center,h_120,q_91,w_120/v1466511452/White-vertical-Logo-with-character.png" alt=""/>
+        <blockquote class="testimonial__text u--push-bottom-xl">
+          <p>{{testimonial.quote}}</p>
+          <cite>&ndash; {{testimonial.author}}, <strong>{{testimonial.company}}</strong></cite>
+        </blockquote>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+
+{% include footer.html %}
+
+{% include foot-scripts.html %}
+
+{% include foot.html %}
