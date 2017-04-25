@@ -1,6 +1,6 @@
 ---
 # Page title.
-title: Find
+title: Monitor
 
 # Image should be served via https.
 image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_800/v1491410285/home/projects.png
@@ -12,7 +12,7 @@ image-caption: "A screenshot of the Snyk website showing test reports alongside 
 image-left: false
 ---
 
-* Find Javascript, Ruby and Java vulnerabilities with Snyk CLI
-* Check all your Node.js, Ruby and Java GitHub repos for vulnerabilities
-* Scrutinise open source packages before using them
-* All powered by Snyk’s own vulnerability database
+* Get visibility of your installed applications dependencies
+* Continuously test your applications for know vulnerabilities.
+* Real time alerts when new vulnerability affects your code.
+* Support for AWS lambda and Heroku apps.

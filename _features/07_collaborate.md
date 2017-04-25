@@ -9,7 +9,7 @@ image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v146883
 image-caption: ""
 
 # Set to true if you want the image on the left.
-image-left: false 
+image-left: false
 ---
 
 * Use Snyk Organisations to collaborate with your team
