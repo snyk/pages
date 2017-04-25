@@ -13,6 +13,6 @@ image-left: false
 ---
 
 * Find Javascript, Ruby and Java vulnerabilities with Snyk CLI
-* Check all your Node.js, Ruby and Java GitHub repos for vulnerabilities
+* Check all your Javascript, Ruby and Java GitHub repos for vulnerabilities
 * Scrutinise open source packages before using them
 * All powered by Snyk’s own vulnerability database
