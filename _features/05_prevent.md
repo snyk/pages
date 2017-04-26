@@ -9,7 +9,7 @@ image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v146883
 image-caption: ""
 
 # Set to true if you want the image on the left.
-image-left: true
+image-left: false
 ---
 
 * Snyk tests in your GitHub pull requests flag code changes that add vulnerable Node.js, Ruby and Java dependencies
