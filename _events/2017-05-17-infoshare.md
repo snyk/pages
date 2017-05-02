@@ -6,7 +6,7 @@ title: infoShare
 location: Gdansk, Poland
 
 # Event URL
-external-url: https://www.meetup.com/Serverless-London/
+external-url: https://infoshare.pl/
 
 # Date(s)
 start-date: 2017-05-17
@@ -18,9 +18,9 @@ cta-text: "Learn more about infoShare"
 # Talks
 talks:
  - presenter: Tim Kadlec
-   topic: "The Thing About Frameworks"
+   topic: "Evaluating Frameworks"
  - presenter: Tim Kadlec
-   topic: "Putting your JavaScript on Lockdown"
+   topic: "Defending the Front-End"
 
 # Image should be served via https and have a width to height ratio of ~2.34
 image: https://res.cloudinary.com/snyk/image/upload/c_lfill,h_213,w_500/v1491879129/infoshare.jpg
