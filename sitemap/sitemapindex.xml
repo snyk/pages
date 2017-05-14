@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+      <loc>https://snyk.io/sitemap/sitemap.xml</loc>
+      <lastmod>2017-05-14T00:23:17+00:00</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>https://snyk.io/sitemap/blog.xml</loc>
+      <lastmod>2017-05-14T00:23:17+00:00</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>https://snyk.io/sitemap/docs.xml</loc>
+      <lastmod>2017-05-14T00:23:17+00:00</lastmod>
+   </sitemap>
+   <sitemap>
+      <loc>https://snyk.io/sitemap/styleguide.xml</loc>
+      <lastmod>2017-05-14T00:23:17+00:00</lastmod>
+   </sitemap>
+    <sitemap>
+      <loc>https://snyk.io/sitemap/vulns.xml</loc>
+      <lastmod>2017-05-14T00:23:17+00:00</lastmod>
+   </sitemap>
+  </sitemapindex>
