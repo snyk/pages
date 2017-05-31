@@ -98,7 +98,7 @@ In addition to the rights granted to us above, we also require, and you hereby g
 
 ### 10. Usage Data Analysis
 
-Our CLI tool reports to us an event for each command you issue, including, but not limited to, the version of the CLI tool, the versions of surrounding tools such as node and npm, the Snyk User and organization ID, the arguments and inputs provided to the CLI, and details about duration, success and failure of CLI actions. This information is used by us for analytical purposes and to improve our Services. It allows us to better understand how the CLI too is used, and informs our product development decisions.
+Our CLI tool reports to us an event for each command you issue, including, but not limited to, the version of the CLI tool, the versions of surrounding tools such as node and npm, the Snyk User and organization ID, the arguments and inputs provided to the CLI, and details about duration, success and failure of CLI actions. This information is used by us for analytical purposes and to improve our Services. It allows us to better understand how the CLI tool is used, and informs our product development decisions.
 
 If you would like to opt out of this, you can do so by setting the `disable-analytics` configuration item, as explained in our FAQ page at [https://snyk.io/docs/faqs/#using-snyk](https://snyk.io/docs/faqs/#using-snyk).
 
