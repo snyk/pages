@@ -48,7 +48,6 @@ We use information held about you in the following ways:
 We may share your information with the following, selected third parties:
 
 * business partners service providers and sub-contractors for the performance of any contract we enter into with them or you;
-* advertisers and advertising networks that require the data to select and serve relevant adverts to you and others; and
 * analytics and search engine providers that assist us in the improvement and optimisation of our Platform.
 
 We may disclose your personal information to certain third parties in the following circumstances:
