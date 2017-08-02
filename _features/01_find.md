@@ -12,7 +12,7 @@ image-caption: "A screenshot of the Snyk website showing test reports alongside 
 image-left: false
 ---
 
-* Find Javascript, Ruby, Java and Python vulnerabilities with Snyk CLI
-* Check all your Javascript, Ruby and Java GitHub repos for vulnerabilities
+* Find Javascript, Ruby, Python, Scala and Java vulnerabilities with Snyk CLI
+* Check all your Javascript, Ruby, Python, Scala and Java GitHub repos for vulnerabilities
 * Scrutinise open source packages before using them
 * All powered by Snyk’s own vulnerability database
