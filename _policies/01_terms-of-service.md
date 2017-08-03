@@ -1,6 +1,6 @@
 ---
 title: Terms of Services
-date-modified: 3rd March 2017
+date-modified: 4th July 2017
 ---
 
 Unless you have entered into a separate SAAS agreement with us, these Terms of Service (together with the documents referred to in it) tell you the terms on which you may make use of the services which are made available to you via our software platform at https://snyk.io and our CLI tool (together, the “Platform”) (the “Services”), as well as all information and data made available to you in connection with the Services (“Service Data”).
@@ -39,13 +39,17 @@ In the case of a company, you hereby warrant that you have authority to bind the
 
 ### 4. Rights we grant you
 
-We grant you a non-exclusive, non-transferable, revocable right to install and make use of the Services and to make use of the documentation available at [https://snyk.io/docs](https://snyk.io/docs) (“Documentation”) and Service Data, solely for your internal business operations or otherwise for purposes relating to your trade, business or profession, and in accordance with these Terms of Service. This licence shall remain in effect until and unless these Terms of Service are terminated by you or us (see clause 13 for information about termination). You promise and agree that you will only make use of the Services, Documentation and Service Data within the scope of this licence and limits, terms and conditions set out in these Terms of Service, and that you will not redistribute or transfer the Services, Documentation or Service Data.
+We grant you a non-exclusive, non-transferable, revocable right to install and make use of the Services and to make use of the documentation available at [https://snyk.io/docs](https://snyk.io/docs) (“Documentation”) and Service Data, solely for your internal business operations and in accordance with these Terms of Service.
+
+This licence shall remain in effect until and unless these Terms of Service are terminated by you or us (see clause 13 for information about termination). You promise and agree that you will only make use of the Services, Documentation and Service Data within the scope of this licence and limits, terms and conditions set out in these Terms of Service, and that you will not redistribute or transfer the Services, Documentation or Service Data, or any part of them.
 
 You acknowledge that all intellectual property rights in the Services, the Documentation, the Service Data and the Platform anywhere in the world belong to us or our licensors (even after installation onto a computer owned by you or integration into your system), and that you have no rights in or to the Services, Documentation, Service Data or the Platform other than the right to use each of them in accordance with the terms of these Terms of Service.
 
+In the event that you breach the terms of the licence granted to you herein and such breach results in the creation of derivative works of the Services, the Documentation, and/or the Service Data (“Improvements”), you hereby assign with full title guarantee all such Improvements to us. Such assignment does not preclude us from taking any legal or other action against you for contravention of these terms and conditions, including for infringement of our intellectual property rights.
+
 ### 5. Services
 
-From time to time, we may introduce new services, features or functionality to the Services. These Terms of Service will apply to such new services, features or functionality, unless they come with separate or additional terms, in which case you will be required to agree to such separate or additional terms before being permitted to use the new services, features or functionality. 
+From time to time, we may introduce new services, features or functionality to the Services. These Terms of Service will apply to such new services, features or functionality, unless they come with separate or additional terms, in which case you will be required to agree to such separate or additional terms before being permitted to use the new services, features or functionality.
 
 We undertake that the Services will be performed substantially in accordance with the Documentation and with reasonable skill and care. This undertaking shall not apply to the extent of any non-conformance which is caused by your use of the Services contrary to our instructions or these Terms of Service, or any alternation or modification made to the Services or the software used in the provision of the Services by a third party who is not authorised by us. You understand and agree that we have no obligation to modify software to support your use of the Services.
 
@@ -71,8 +75,18 @@ We will not be liable to you if the Services are unavailable at any time, or for
 We reserve the right to suspend your access to or use of the Services without notice in the event you breach these Terms of Service or if we reasonably suspect that you have breached these Terms of Service.
 
 ### 7. Using the Services
+You must not use the Services for any commercial use (other than for internal use within your business), and you must not redistribute or transfer the Services, Documentation or Service Data to any third party or make any part of the Services, Documentation or Service Data available to be accessed, in whole or in part, by any third party.
 
-You agree to comply with the Acceptable Use Policy at [https://snyk.io/policies#acceptable-use-policy](https://snyk.io/policies#acceptable-use-policy) with regards to your use of the Services, Service Data and Documentation, including any material and data you transmit using the Services. This Acceptable Use Policy is hereby incorporated into these Terms of Use.
+The licence granted to you to install and make use of the Services, the Documentation, and Service Data, does not permit you to do, and you shall not do nor permit any third party to do, any of the following:
+
+*	Embed our Services, Documentation, or Service Data into any product of yours or any third party;
+*	Make available through automated or manual means any part of the Services, the Documentation, or the Service Data, by way of crawling, scraping, spidering or otherwise;
+*	Copy or access all or any part of the Services, the Documentation, or the Service Data other than via the interface(s) provided to you by us;
+*	Use web-crawlers, bots, or scripts to copy or access any part of the Services, the Documentation or the Service Data;
+*	Circumvent or attempt to override any security features we have installed around the Services, the Documentation, or the Service Data; or
+*	Copy in part or in whole, our database of vulnerabilities.
+
+You further agree to comply with the Acceptable Use Policy at [https://snyk.io/policies#acceptable-use-policy](https://snyk.io/policies#acceptable-use-policy) with regards to your use of the Services, Service Data and Documentation, including any material and data you transmit using the Services. This Acceptable Use Policy is hereby incorporated into these Terms of Use.
 
 A breach of the Acceptable Use Policy will constitute a breach of these Terms of Service, and may result in termination or suspension of your account in accordance with these Terms of Service.
 
@@ -98,7 +112,7 @@ In addition to the rights granted to us above, we also require, and you hereby g
 
 ### 10. Usage Data Analysis
 
-Our CLI tool reports to us an event for each command you issue, including, but not limited to, the version of the CLI tool, the versions of surrounding tools such as node and npm, the Snyk User and organization ID, the arguments and inputs provided to the CLI, and details about duration, success and failure of CLI actions. This information is used by us for analytical purposes and to improve our Services. It allows us to better understand how the CLI tool is used, and informs our product development decisions.
+Our CLI tool reports to us an event for each command you issue, including, but not limited to, the version of the CLI tool, the versions of surrounding tools such as node and npm, the Snyk User and organization ID, the arguments and inputs provided to the CLI, and details about duration, success and failure of CLI actions. This information is used by us for analytical purposes and to improve our Services. It allows us to better understand how the CLI too is used, and informs our product development decisions.
 
 If you would like to opt out of this, you can do so by setting the `disable-analytics` configuration item, as explained in our FAQ page at [https://snyk.io/docs/faqs/#using-snyk](https://snyk.io/docs/faqs/#using-snyk).
 
