@@ -1,0 +1,52 @@
+{% include head.html %}
+
+{% include header.html %}
+
+<div class="backdrop-alternate">
+  <div class="layout-container u--centered">
+    <h1 class="header__title">{{page.title}}</h1>
+    <p class="header__description__info">{{page.top-description}}</p>
+    <form method="get" action="/signup">
+      <a href="/auth/github?redirectUri=L2FkZA==" id="cta-add-github-repos" class="button button--primary u-button-margin-all"></span> {{page.general-cta-text}}</a>
+      <a href="/signup" id="cta-signup" class="button button--primary u-button-margin-all"><span class=" -md"></span> {{page.contact-us-cta-text}}</a>
+    </form>
+  </div>
+</div>
+
+{% for feature in site.features_devops %}
+<div class="backdrop-alternate">
+  <div class="layout-container">
+    <div class="layout-cols layout-cols--centered layout-cols--ordered">
+      <div class="layout-cols__item feature {% if feature.image-left %}{% else %}layout-cols__item--first{% endif %}">
+        <h2>{{ feature.title }}</h2>
+        {{feature.content | markdownify}}
+      </div>
+      <div class="layout-cols__item feature {% if feature.image-left %}layout-cols__item--first{% endif %} {% if feature.images %}layout-assorted layout-assorted--pull{% endif %}">
+        {% if feature.images %}
+          {% for image in feature.images %}
+            <img src="{{image.image}}" alt="{{image.image-caption}}">
+          {% endfor %}
+        {% elsif feature.image %}
+          <img src="{{feature.image}}" alt="{{feature.image-caption}}">
+        {% elsif feature.code %}
+{{feature.code}}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<div class="backdrop-alternate layout-stacked__content layout-stacked__content--secondary u--flat-bottom">
+  <div class="layout-container u--centered">
+    <p class="header__description__info">{{page.bottom-description}}</p>
+    <form id="add--mygithub" action="/add" method="get" class="u--push-bottom-xl">
+      <button class="button" id="add--mygithub__submit" type="submit">{{page.bottom-button-text}}</button>
+    </form>
+  </div>
+</div>
+
+{% include footer.html %}
+
+{% include foot-scripts.html %}
+{% include foot.html %}

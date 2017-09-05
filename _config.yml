@@ -1,6 +1,9 @@
 collections:
 - faqs
 - features
+- features_dev
+- features_devops
+- features_enterprise
 - policies
 - events
 
