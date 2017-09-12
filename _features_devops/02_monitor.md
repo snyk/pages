@@ -12,7 +12,6 @@ image-caption: "A screenshot of the Snyk website showing test reports alongside 
 image-left: true
 ---
 
-* Get visibility of your deployed applications dependencies
-* Continuously test your applications for known vulnerabilities.
-* Real time alerts when new vulnerabilities affect your code.
-* Support for AWS Lambda and Heroku apps.
+* Continuously test your applications for known vulnerabilities
+* Real time alerts on new vulnerabilities allow you to respond quickly
+* Montior PaaS and Serverless applications, including AWS Lambda and Heroku apps

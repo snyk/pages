@@ -12,6 +12,7 @@ image-caption: ""
 image-left: false
 ---
 
-* Break the build when a new vulnerable library is introduced
-* Use Snyk's deep integrations with Jenkins, BitBucket Pipelines, Concourse, CodeShip, Travis and others.
-* Modify the Snyk policy to make the integration work for your team
+* Reject builds that introduce new vulnerabilities
+* Ignore vulnerabiltiies and keep audit logs using the Snyk policy file
+* Save vulnerability reports in the Snyk dashboard or to local files
+* Integrates with all CI tools including Jenkins, BitBucket Pipelines, Concourse, CodeShip, Travis and others

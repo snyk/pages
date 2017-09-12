@@ -14,5 +14,5 @@ image-left: true
 
 * Get alerted when newly disclosed vulnerabilities affect your projects
 * Email and Slack notifications for new vulnerabilities and fixes
-* Automatic GitHub pull requests to fix the new vulnerability
-* Comprehensive information and remediation guidance for vulnerabilities
+* Notifications via GitHub pull requests include the fix for the new vulnerability
+* Follow the details link for ccmprehensive advisories and remediation guidance
