@@ -3,7 +3,7 @@ version: v1.7.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   SNYK-RUBY-NOKOGIRI-20299:
-    - '* > github-pages@138':
+    - '* > github-pages@161':
         reason: No fix available
         expires: '2018-06-21T16:54:37.730Z'
 patch: {}
