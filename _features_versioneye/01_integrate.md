@@ -3,7 +3,7 @@
 title: Broad Ecosystem Support
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_800/v1491410285/home/projects.png
+image: https://res.cloudinary.com/snyk/image/upload/c_scale,q_auto,w_550/v1513193820/vulndb.png
 
 # Used as the alt text.
 image-caption: "A screenshot of the Snyk website showing test reports alongside each project"
@@ -21,4 +21,4 @@ By using Snyk, you will get the same quality of vulnerability notifications you 
 * Gradle
 * Go
 * .net
-* PHP.
+* PHP

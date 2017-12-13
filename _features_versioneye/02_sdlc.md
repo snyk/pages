@@ -3,7 +3,7 @@
 title: Snyk for Github, CI/CD and CLI
 
 # Image should be served via https.
-image: http://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_800/v1493142741/integrations.png
+image: https://res.cloudinary.com/snyk/image/upload/c_scale,q_auto,w_550/v1513193608/Integrations.png
 
 # Used as the alt text.
 image-caption: ""

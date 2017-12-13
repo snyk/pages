@@ -3,7 +3,7 @@
 title: Snyk and VersionEye
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1478712840/features/vulndb.png
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_800/v1491410285/home/projects.png
 
 # Used as the alt text.
 image-caption: ""

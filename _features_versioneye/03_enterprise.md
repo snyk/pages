@@ -3,7 +3,7 @@
 title: Snyk for Enterprise Users
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839396/features/features-prevent.png
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_560/v1503652782/reports/overview.png
 
 # Used as the alt text.
 image-caption: ""
