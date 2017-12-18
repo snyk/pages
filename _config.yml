@@ -4,6 +4,7 @@ collections:
 - features_dev
 - features_devops
 - features_enterprise
+- features_versioneye
 - policies
 - events
 
