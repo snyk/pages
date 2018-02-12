@@ -3,7 +3,7 @@
 title: Monitor
 
 # Image should be served via https.
-image: http://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_800/v1493142741/integrations.png
+image: https://res.cloudinary.com/snyk/image/upload/v1518456413/features/features-monitor.png
 
 # Used as the alt text.
 image-caption: "A screenshot of the Snyk website showing test reports alongside each project"

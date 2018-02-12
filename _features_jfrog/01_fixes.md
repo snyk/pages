@@ -3,7 +3,7 @@
 title: Vulnerability Remediation
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839471/features/features-alert.png
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839471/features/features-remediation.png
 
 # Used as the alt text.
 image-caption: ""
