@@ -3,7 +3,7 @@
 title: Vulnerability Prevention
 
 # Image should be served via https.
-image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839396/features/features-prevent.png
+image: https://res.cloudinary.com/snyk/image/upload/f_auto,q_auto,w_auto/v1468839396/features/features-prevention.png
 
 # Used as the alt text.
 image-caption: ""
