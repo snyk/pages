@@ -2,16 +2,26 @@
 
 {% include header.html %}
 
-<div class="backdrop-alternate">
-  <div class="layout-container u--centered">
-    <h1 class="header__title">{{page.title}}</h1>
-    <p class="header__description__info">{{page.top-description}}</p>
-    <form method="get" action="/signup">
-      <a href="mailto:contact@snyk.io" class="button button--primary u-button-margin-all"><span class=" -md"></span> {{page.contact-us-cta-text}}</a>
-      <a href="/signup" id="cta-signup" class="button button--primary u-button-margin-all"><span class=" -md"></span> {{page.general-cta-text}}</a>
-    </form>
+<div class="backdrop-dark">
+  <div class="layout-container">
+    <div class="hero">
+      <div class="hero__image">
+        <img src="{{page.main-image}}" alt="{{page.main-image-caption}}" style="width: 7em;">
+      </div>
+      <div class="hero__content">
+        <h1 class="u--push-top-s u--push-bottom-xs">{{page.title}}</h1>
+        {% if page.subtitle %} <h2 class="tiered-title text--complement" style="font-weight: normal;">{{page.subtitle}}{% endif %}</h2>
+        <p class="header__description__info">{{page.top-description}}</p>
+        <form method="get" action="/signup">
+          <a href="mailto:contact@snyk.io" class="button button--primary u-button-margin-top-bottom u-button-margin-right"><span class=" -md"></span> {{page.contact-us-cta-text}}</a>
+          <a href="/signup" id="cta-signup" class="button button--primary u-button-margin-top-bottom u-button-margin-right"><span class=" -md"></span> {{page.general-cta-text}}</a>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
+  
+
 <div class="backdrop-alternate">
   <div class="layout-container">
     <div class="layout-cols layout-cols--centered layout-cols--ordered">
@@ -21,57 +31,7 @@
         <p>For even deeper security coverage inside JFrog Xray you can upgrade to the full “Snyk Premium” Vulnerability Database by becoming a <a href="https://snyk.io/plans">Snyk Enterprise or Snyk Pro</a> customer. To inquire about becoming a Snyk Enterprise or Snyk Pro customer and unlocking the full “Snyk Premium” database inside JFrog Xray please contact <a href="mailto:contact@snyk.io">contact@snyk.io</a>. For existing Enterprise or Pro customers, a quick guide on how to upgrade to Snyk Premium is available here: <a href="https://support.snyk.io/integrations/jfrog/jfrog-xray-integration-how-to-upgrade-to-snyk-premium">How to Upgrade To Snyk Premium</a>.”</p>
       </div>
       <div class="layout-cols__item feature {% if feature.image-left %}layout-cols__item--first{% endif %} {% if feature.images %}layout-assorted layout-assorted--pull{% endif %}">
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th>JFrog Xray + Snyk Basic</th>
-              <th>JFrog Xray + Snyk Enterprise/Pro</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="col">Pre-installed</th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-              <th></th>
-            </tr>
-            <tr>
-              <th scope="col">Scan for vulnerabilities available in open public structured databases</th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-            </tr>
-            <tr>
-              <th scope="col">Scan for premium vulnerabilities</th>
-              <th></th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-            </tr>
-            <tr>
-              <th scope="col">Continuous Monitoring + Alerts</th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-            </tr>
-            <tr>
-              <th scope="col">Early vulnerability discovery</th>
-              <th></th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-            </tr>
-            <tr>
-              <th scope="col">Vulnerability Prevention</th>
-              <th></th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-            </tr>
-            <tr>
-              <th scope="col">Vulnerability Remediation</th>
-              <th></th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-            </tr>
-            <tr>
-              <th scope="col">Monitor Deployed Code</th>
-              <th></th>
-              <th class="u--centered"><span aria-label="Included">&#x2714;</span></th>
-            </tr>
-          </tbody>
-        </table>
+          <img src="https://res.cloudinary.com/snyk/image/upload/v1518457048/features/jfrog-xray-table.png" alt="">
       </div>
     </div>
   </div>
