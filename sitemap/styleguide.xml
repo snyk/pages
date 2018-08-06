@@ -16,18 +16,6 @@
     <loc>https://snyk.io/styleguide/section-colors</loc>
   </url>
   <url>
-    <loc>https://snyk.io/styleguide/section-component</loc>
-  </url>
-  <url>
-    <loc>https://snyk.io/styleguide/section-docs</loc>
-  </url>
-  <url>
-    <loc>https://snyk.io/styleguide/section-flag</loc>
-  </url>
-  <url>
-    <loc>https://snyk.io/styleguide/section-fonts</loc>
-  </url>
-  <url>
     <loc>https://snyk.io/styleguide/section-forms</loc>
   </url>
   <url>
@@ -47,8 +35,5 @@
   </url>
   <url>
     <loc>https://snyk.io/styleguide/section-utility</loc>
-  </url>
-  <url>
-    <loc>https://snyk.io/styleguide/section-post</loc>
   </url>
 </urlset>
