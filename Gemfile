@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'github-pages', '>= 177', group: :jekyll_plugins
+gem 'github-pages', '>= 186', group: :jekyll_plugins
